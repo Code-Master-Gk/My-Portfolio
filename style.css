@@ -1,0 +1,3278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* ===============================================
+                    font familys
+==================================================*/
+
+@font-face {
+    font-family: Sanseriffic;
+    src: url("./fonts/Sanseriffic.otf");
+}
+
+@font-face {
+    font-family: TIMESS;
+    src: url("./fonts/TIMESS__.ttf");
+}
+
+@font-face {
+    font-family: wind;
+    src: url("./fonts/wind.ttf");
+}
+
+
+/* ===============================================
+                    header
+==================================================*/
+
+header {
+    height: 14vh;
+    width: 98.9vw;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    padding-right: 6rem;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.scrolled {
+    background-color: rgb(19 23 26);
+}
+
+header img {
+    height: 6rem;
+    width: 8rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.nav-links li {
+    transform-style: preserve-3d;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    transition: all 0.3s ease;
+    transform: translateZ(2rem);
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.8rem;
+}
+
+.nav-links li a i {
+    font-size: 1.5rem;
+    transition: transform 0.4s, color 0.3s;
+}
+
+.nav-links li a:hover i {
+    transform: rotate(20deg) scale(1.2);
+    color: #00ff7f;
+    text-shadow: 0 0 10px #00ff7f, 0 0 20px #00c6ff;
+}
+
+.nav-links li a:hover {
+    color: #fff;
+    transform: translateZ(4rem) scale(1.1);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 255, 150, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #ff0057, #00c6ff, #00ff7f);
+    transition: width 0.3s ease;
+    border-radius: 0.3rem;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+header .menu {
+    display: none;
+}
+
+/* ===============================================
+                    home_page
+==================================================*/
+
+.home_page {
+    height: 100vh;
+    width: 98.9vw;
+    background-color: rgb(19 23 26);
+}
+
+.home_page .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 0 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_page .container .main {
+    height: 84vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.home_page .container .main .box1 {
+    height: 100%;
+    width: 40vw;
+    padding: 8rem 0rem;
+    padding-right: 6rem;
+}
+
+.home_page .container .main .box1 .contant h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.home_page .container .main .box1 .contant p {
+    font-size: 3.3rem;
+    padding-bottom: 1.5rem;
+    color: #16d5e2;
+
+}
+
+.home_page .container .main .box1 .contant .pra {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.10rem;
+    line-height: 2rem;
+}
+
+.home_page .container .main .box1 .contant .icon {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.home_page .container .main .box1 .contant .icon i {
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.home_page .container .main .box1 .contant .icon i:hover {
+    color: #0d7880;
+}
+
+.home_page .container .main .box1 .contant button {
+    margin-top: 5rem;
+    height: 4rem;
+    width: 20rem;
+    background: transparent;
+    color: #fff;
+    font-size: 1.5rem;
+    border: 2px solid #fff;
+    border-radius: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.home_page .container .main .box1 .contant button i {
+    font-size: 1.5rem;
+}
+
+
+.home_page .container .main .box1 .contant button:hover {
+    background-color: #0d7880;
+    border: #0d7880;
+    color: #000;
+}
+
+
+
+.home_page .container .main .box2 {
+    height: 100%;
+    width: 50vw;
+
+}
+
+.home_page .container .main .box2 .main {
+    height: 88vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.home_page .container .main .box2 .main .image {
+    height: 30rem;
+    width: 48rem;
+    position: relative;
+    top: 8rem;
+    left: 7rem;
+    color: #fff;
+    box-shadow: 1px 1px 5px 1.5px #000;
+    animation-delay: 2s;
+    animation: 3s hide ease-in-out;
+}
+
+@keyframes hide {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+
+}
+
+.home_page .container .main .box2 .main .image img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.home_page .container .main .box2 .main .image .tital {
+    height: 8rem;
+    width: 100%;
+    background: rgba(14, 18, 19, 0.8);
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+}
+
+.home_page .container .main .box2 .main .image .tital h1 {
+    padding-bottom: 0.5;
+    font-size: 1.6rem;
+}
+
+.home_page .container .main .box2 .main .image .tital p {
+    font-size: 1.4rem;
+}
+
+.home_page .container .main .box2 .main .image .user {
+    position: absolute;
+    top: -8rem;
+    left: -5rem;
+    height: 20rem;
+    font-size: 1rem;
+    width: 12rem;
+    background-color: #202427;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 1px -1px 8px 1.5px #000;
+    animation: 4s top;
+}
+
+@keyframes top {
+    0% {
+        top: -30rem;
+        left: -5rem;
+    }
+
+    100% {
+        top: -8rem;
+        left: -5rem;
+    }
+
+
+}
+
+
+.home_page .container .main .box2 .main .image .user img {
+    height: 11rem;
+    width: 100%rem;
+    padding-bottom: 0.5rem;
+}
+
+.home_page .container .main .box2 .main .image .profile {
+    height: 39rem;
+    width: 16rem;
+    background: rgba(158, 160, 161, 1);
+    position: absolute;
+    top: 5rem;
+    right: -9rem;
+    text-align: center;
+    padding: 0 .3rem;
+    padding-top: 13rem;
+    color: #000;
+    box-shadow: -2px 1.5px 10px 1.5px #000;
+    animation: 4s right;
+}
+
+@keyframes right {
+    0% {
+        top: 5rem;
+        right: -30rem;
+    }
+
+    100% {
+        top: 5rem;
+        right: -9rem;
+    }
+}
+
+
+.home_page .container .main .box2 .main .image .profile .P_image {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.home_page .container .main .box2 .main .image .profile .P_image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.home_page .container .main .box2 .main .image .profile p {
+    padding-top: 0.8rem;
+    font-size: 1.2rem;
+    width: 10rem;
+    position: relative;
+    left: 2.5rem;
+}
+
+.home_page .container .main .box2 .main .card {
+    height: 12rem;
+    width: 40rem;
+    background-color: #fff;
+    position: absolute;
+    top: 32rem;
+    left: -5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 1px 1px 10px 1.5px #000;
+    animation: 4s left;
+}
+
+@keyframes left {
+    0% {
+        top: 32rem;
+        left: -50rem;
+    }
+
+    100% {
+        top: 32rem;
+        left: -5rem;
+    }
+}
+
+.home_page .container .main .box2 .main .card img {
+    height: 9rem;
+    width: 10rem;
+
+}
+
+.home_page .container .main .box2 .main .card .contant {
+    height: 10rem;
+    width: 24rem;
+    color: #000;
+    padding: 0rem 0;
+    font-size: 0.9rem;
+}
+
+.home_page .container .main .box2 .main .card .contant p {
+    padding-top: 0.7rem;
+    font-size: 1rem;
+}
+
+/* ===============================================
+                    about_page
+==================================================*/
+
+.about_page {
+    height: 160vh;
+    width: 98.9vw;
+}
+
+.about_page .heading .title {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about_page .heading .title .line {
+    width: 17rem;
+    height: 7.5rem;
+    border-bottom: 1.5px solid #000;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.about_page .heading .title .line .line2 {
+    width: 8rem;
+    height: 7.5rem;
+    border-top: 3px solid #0d7880;
+    margin: 1.13rem 4.5rem;
+}
+
+.about_page .heading p {
+    padding: 3rem 5rem;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.about_page .main {
+    padding: 2rem 5rem;
+    margin-top: 2rem;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_page .main .image {
+    height: 100%;
+    width: 45rem;
+}
+
+.about_page .main .image img {
+    height: 100%;
+    width: 100%;
+}
+
+.about_page .main .contant {
+    height: 100%;
+    width: 76rem;
+    padding-left: 0rem;
+}
+
+.about_page .main .contant h1 {
+    font-size: 2.5rem;
+}
+
+.about_page .main .contant p {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.about_page .main .contant .profile {
+    padding: 0rem 3rem;
+    padding-top: 4rem;
+    display: flex;
+    gap: 8rem;
+}
+
+
+.about_page .main .contant .profile ul li {
+    display: flex;
+    list-style: none;
+    font-size: .5rem;
+    align-items: center;
+    color: #0d7880;
+    padding-bottom: 2.5rem;
+}
+
+.about_page .main .contant .profile ul li p {
+    padding: 0;
+    color: #000;
+    font-size: 1.8rem;
+    margin-top: -0.4rem;
+}
+
+.about_page .main .contant .profile ul li p span {
+    font-weight: bold;
+    padding-right: 0.6rem;
+}
+
+.about_page .main .contant .pra {
+    font-size: 1.6rem;
+}
+
+/*--------------------about_page tsats-section---------------------*/
+
+.stats-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10rem;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-icon {
+    width: 7rem;
+    height: 7rem;
+    background-color: #0066cc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 3.3rem;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.stat-label {
+    font-size: 1.5rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
+
+
+/* ===============================================
+                    skill_page
+==================================================*/
+
+.skill-page {
+    height: 110vh;
+    width: 98.9vw;
+    padding: 5rem 0rem;
+}
+
+.skill-page .heading {
+    padding-top: 0rem;
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.skill-page .heading .line {
+    height: 0.12rem;
+    width: 17rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-page .heading .line2 {
+    width: 8rem;
+    height: 0.29rem;
+    background-color: #0d7880;
+}
+
+.skill-page .heading p {
+    font-size: 1.7rem;
+}
+
+.skill-page .main {
+    margin-top: 5rem;
+    padding: 2rem 15rem;
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.skill-page .skill-container .skill-tital {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-page .skill-container .skill-icon {
+    height: 2rem;
+    width: 20rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-page .skill-container .skill-icon img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.skill-page .skill-container .skill-icon span {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.skill-page .skill-container span {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.skill-container .bar {
+    margin-top: 1rem;
+    height: 1rem;
+    width: 45rem;
+    background-color: #c5c5c5;
+}
+
+.skill-container .bar .line {
+    height: 100%;
+    width: 0%;
+    background-color: #0563bb;
+    transition: width 1.5s ease-in-out;
+}
+
+
+/* ===============================================
+                    resume_page
+==================================================*/
+
+.resume_page {
+    height: 220vh;
+    width: 98.9vw;
+    padding-top: 5rem;
+}
+
+/*--------------------resume_page_heading---------------------*/
+
+.resume_page .heading {
+    padding-top: 0rem;
+    text-align: center;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.resume_page .heading .line {
+    height: 0.12rem;
+    width: 17rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume_page .heading .line2 {
+    width: 8rem;
+    height: 0.29rem;
+    background-color: #0d7880;
+}
+
+/*--------------------resume_page_my_info---------------------*/
+
+.resume_page .my_info {
+    padding: 10rem 9rem;
+    display: flex;
+    gap: 5rem;
+    height: 195vh;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/*--------------------resume_page_name---------------------*/
+
+.resume_page .box {
+    height: 100%;
+    width: 48%;
+}
+
+.resume_page .box .tital h1 {
+    font-size: 3rem;
+    color: #45505b;
+}
+
+.resume_page .my_profile .name {
+    padding-top: 2rem;
+    padding-left: 0.5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.resume_page .my_profile .name .line {
+    height: 26.4rem;
+    width: 0.2rem;
+    background-color: #0563bb;
+    margin-top: 1rem;
+}
+
+.resume_page .my_profile .name .line .crical {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #0563bb;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    left: -0.6rem;
+}
+
+.resume_page .my_profile .name .contant h1 {
+    font-size: 2.2rem;
+    color: #45505b;
+}
+
+.resume_page .my_profile .name .contant p {
+    font-size: 1.54rem;
+    color: #333;
+    padding-top: 1rem;
+    line-height: 2.5rem;
+}
+
+.resume_page .my_profile .name .contant ul {
+    padding-top: 1rem;
+}
+
+.resume_page .my_profile .name .contant ul li {
+    font-size: 1.54rem;
+    color: #333;
+    padding-top: 1rem;
+    margin-left: 1.8rem;
+    list-style: disc;
+}
+
+/*--------------------resume_page_education---------------------*/
+
+.resume_page .my_profile .education h1 {
+    font-size: 3rem;
+    color: #45505b;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+}
+
+.resume_page .my_profile .education .educ_info {
+    display: flex;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.resume_page .my_profile .education .educ_info .line {
+    height: 15rem;
+    width: 0.2rem;
+    background-color: #0563bb;
+    margin-top: 1.8rem;
+    margin-left: 0.5rem;
+}
+
+.resume_page .my_profile .education .educ_info .line .crical {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #0563bb;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    left: -0.6rem;
+}
+
+.resume_page .my_profile .education .educ_info .contant h1 {
+    font-size: 2.2rem;
+    color: #45505b;
+}
+
+.resume_page .my_profile .education .educ_info .contant p {
+    font-size: 1.54rem;
+    color: #333;
+    padding-top: 1rem;
+    line-height: 2.5rem;
+}
+
+/*--------------------resume_page_skill---------------------*/
+
+.resume_page .my_profile .education .skill_info {
+    display: flex;
+    gap: 2rem;
+}
+
+.resume_page .my_profile .education .skill_info .line {
+    height: 37rem;
+    width: 0.2rem;
+    background-color: #0563bb;
+    margin-left: 0.5rem;
+}
+
+.resume_page .my_profile .education .skill_info .line .crical {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #0563bb;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    left: -0.6rem;
+}
+
+.resume_page .my_profile .education .skill_info .contant h1 {
+    font-size: 2.2rem;
+    margin-top: -2rem;
+}
+
+.resume_page .my_profile .education .skill_info .contant h1 {
+    margin-top: -1.8rem;
+}
+
+.resume_page .my_profile .education .skill_info .contant ul {
+    padding-top: 1rem;
+}
+
+.resume_page .my_profile .education .skill_info .contant ul li {
+    font-size: 1.54rem;
+    color: #333;
+    padding-top: 1rem;
+    margin-left: 1.8rem;
+    list-style: disc;
+}
+
+.resume_page .my_profile .education .skill_info .contant h2 {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+}
+
+/*-------------------- resume_page_inag_info ---------------------*/
+
+.resume_page .my_profile .education .lang_info {
+    display: flex;
+    gap: 2rem;
+}
+
+.resume_page .my_profile .education .lang_info .line {
+    height: 11rem;
+    width: 0.2rem;
+    background-color: #0563bb;
+    margin-left: 0.5rem;
+}
+
+.resume_page .my_profile .education .lang_info .line .crical {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #0563bb;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    left: -0.6rem;
+}
+
+.resume_page .my_profile .education .lang_info .contant h2 {
+    margin-top: -0.5rem;
+    padding-left: 1.8rem;
+    font-size: 1.8rem;
+}
+
+.resume_page .my_profile .education .lang_info .contant ul {
+    padding-top: 0.8rem;
+}
+
+.resume_page .my_profile .education .lang_info .contant ul li {
+    font-size: 1.54rem;
+    color: #333;
+    padding-top: 1.5rem;
+    margin-left: 1.8rem;
+    list-style: disc;
+}
+
+/*--------------------resume_page_my_projects---------------------*/
+
+.resume_page .projects .internship {
+    padding-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.resume_page .projects .internship .line {
+    height: 42rem;
+    width: 0.2rem;
+    background-color: #0563bb;
+}
+
+.resume_page .projects .internship .line .crical {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #0563bb;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    left: -0.6rem;
+}
+
+.resume_page .projects .internship .contant h1 {
+    margin-top: -0.6rem;
+    font-size: 2rem;
+    color: #45505b;
+    text-transform: uppercase;
+}
+
+.resume_page .projects .internship .contant h2 {
+    padding: 2rem 1.5rem;
+    font-size: 1.8rem;
+}
+
+.resume_page .projects .internship .contant ul {
+    margin-top: -0.8rem;
+}
+
+.resume_page .projects .internship .contant ul li {
+    font-size: 1.54rem;
+    color: #333;
+    padding-top: 1.5rem;
+    margin-left: 1.8rem;
+    list-style: disc;
+}
+
+/*--------------------resume_page_marketing---------------------*/
+
+.resume_page .projects .marketing {
+    display: flex;
+    gap: 2rem;
+}
+
+.resume_page .projects .marketing .line {
+    height: 36rem;
+    width: 0.2rem;
+    background-color: #0563bb;
+}
+
+.resume_page .projects .marketing .line .crical {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #0563bb;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    left: -0.6rem;
+}
+
+.resume_page .projects .marketing .contant h2 {
+    padding-left: 1.8rem;
+    margin-top: -0.4rem;
+    font-size: 1.8rem;
+}
+
+.resume_page .projects .marketing .contant ul {
+    padding-top: 1rem;
+}
+
+.resume_page .projects .marketing .contant ul li {
+    font-size: 1.54rem;
+    color: #333;
+    padding-top: 1.8rem;
+    margin-left: 1.8rem;
+    list-style: disc;
+}
+
+
+/*--------------------resume_page_other_projects---------------------*/
+
+
+
+.resume_page .projects .Other_project {
+    display: flex;
+    gap: 2rem;
+}
+
+.resume_page .projects .Other_project .line {
+    height: 28rem;
+    width: 0.2rem;
+    background-color: #0563bb;
+}
+
+.resume_page .projects .Other_project .line .crical {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid #0563bb;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    left: -0.6rem;
+}
+
+.resume_page .projects .Other_project .contant h2 {
+    padding-left: 1.8rem;
+    margin-top: -0.4rem;
+    font-size: 1.8rem;
+}
+
+.resume_page .projects .Other_project .contant ul {
+    padding-top: 1rem;
+}
+
+.resume_page .projects .Other_project .contant ul li {
+    font-size: 1.54rem;
+    color: #333;
+    padding-top: 1.8rem;
+    margin-left: 1.8rem;
+    list-style: disc;
+}
+
+/* ===============================================
+                   project_page
+==================================================*/
+
+.project_page {
+    height: 210vh;
+    width: 98.9vw;
+}
+
+/*--------------------project_page_heading---------------------*/
+
+.project_page .heading {
+    padding-top: 0rem;
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.project_page .heading .line {
+    height: 0.12rem;
+    width: 17rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_page .heading .line2 {
+    width: 8rem;
+    height: 0.29rem;
+    background-color: #0d7880;
+}
+
+.project_page .heading p {
+    font-size: 1.7rem;
+    padding: 0rem 8rem;
+}
+
+/*--------------------project_page_project---------------------*/
+
+
+.project_page .container {
+    margin-top: 5rem;
+}
+
+.project_page .container .filter_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.project_page .container .filter_buttons button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 18px;
+}
+
+.project_page .container .filter_buttons button:hover {
+    background-color: lightgray;
+}
+
+.project_page .container .filter_buttons button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.project_page .container .filterable_card {
+    width: 100%;
+    flex-grow: 2;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 5rem;
+    justify-items: center;
+    align-items: center;
+    /* transition: 2s ease; */
+    padding: 0 8rem;
+}
+
+.project_page .container .filterable_card .card {
+    height: 20rem;
+    width: 35rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project_page .container .filterable_card .card.hide {
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.project_page .container .filterable_card .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project_page .container .filterable_card .card .card_body {
+    height: 70%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    padding: 0.5rem 1rem;
+    position: relative;
+    z-index: 10;
+    transition: 1s ease;
+}
+
+.project_page .slider {
+    margin-top: -34%;
+}
+
+.project_page .container .filterable_card .card .card_body h1 {
+    font-size: 2.3rem;
+}
+
+.project_page .container .filterable_card .card .card_body p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #787b7e;
+}
+
+.project_page .container .filterable_card .card .card_body .icon {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 3.1rem;
+    margin-right: 1rem;
+}
+
+.project_page .container .filterable_card .card .card_body .icon i {
+    font-size: 2.8rem;
+    font-weight: 200;
+    color: #787b7e;
+}
+
+.project_page .container .filterable_card .card .card_body .icon i:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
+
+/* ===============================================
+                    contact_page
+==================================================*/
+
+.contact_page {
+    height: 85vh;
+    width: 98.9vw;
+}
+
+/*--------------------contact_page_heading---------------------*/
+
+.contact_page .heading {
+    padding-top: 0rem;
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.contact_page .heading .line {
+    height: 0.12rem;
+    width: 17rem;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_page .heading .line2 {
+    width: 8rem;
+    height: 0.29rem;
+    background-color: #0d7880;
+}
+
+.contact_page .heading p {
+    font-size: 1.7rem;
+    padding: 0rem 8rem;
+}
+
+/*--------------------contact_page_contact-section---------------------*/
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 4rem;
+    max-width: 120rem;
+    margin: auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/*--------------------contact_page_contact-info---------------------*/
+
+
+.contact-info {
+    flex: 1 1 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.info-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.info-item i {
+    font-size: 2rem;
+    color: #0073e6;
+    background-color: #ebf3fa;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.info-item:hover i {
+    background-color: #005bb5;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+
+.info-item h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.8rem;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/*--------------------contact_page_contact-form---------------------*/
+
+.contact-form {
+    flex: 1 1 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    resize: vertical;
+}
+
+.contact-form textarea {
+    min-height: 15rem;
+}
+
+.contact-form button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #005bb5;
+}
+
+/* ===============================================
+                    footer
+==================================================*/
+
+footer {
+    height: 50vh;
+    width: 98.9vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer .container h1 {
+    font-size: 3rem;
+    color: #222;
+}
+
+footer .container .declaration {
+    font-size: 1.6rem;
+    color: #444;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+footer .container .social-icons {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .container .social-icons a {
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    color: white;
+    background-color: #0071d9;
+    border-radius: 50%;
+    /* transition: background 0.3s ease; */
+}
+
+footer .container .social-icons a:hover {
+    background-color: #2994ff;
+}
+
+footer .container hr {
+    margin: 3rem auto;
+    width: 90%;
+    border: 0.1rem solid #eee;
+}
+
+footer .container .footer {
+    font-size: 1.4rem;
+    color: #444;
+}
+
+footer .container .footer a {
+    color: #0071d9;
+    text-decoration: none;
+}
+
+/* ===============================================
+                arrow button
+==================================================*/
+
+.buttons {
+    position: fixed;
+    top: 90%;
+    right: 1rem;
+    z-index: 99;
+}
+
+.buttons button {
+    height: 4.5rem;
+    width: 4.5rem;
+    background: #0066cc;
+    border: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.btnhide {
+    display: none;
+}
+
+
+
+/* ===============================================
+                    Responsive
+==================================================*/
+
+
+/* ************************************************
+                   For Leptop
+***************************************************/
+
+/*------------------------------------------------
+                width : 1021px
+--------------------------------------------------*/
+
+@media (max-width : 1024px) {
+    html {
+        font-size: 48%;
+    }
+
+
+    /*--------------------Home_page---------------------*/
+
+
+    .home_page .container .main .box1 {
+        height: 100%;
+        width: 40vw;
+        padding: 12rem 0rem;
+        padding-right: 6rem;
+    }
+
+    /*--------------------About_page---------------------*/
+
+    .about_page {
+        height: 150vh;
+        width: 98.9vw;
+    }
+
+    .about_page .main .contant {
+        height: 100%;
+        width: 76rem;
+        padding-top: 3.5rem;
+    }
+
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5rem 10rem;
+        flex-wrap: wrap;
+    }
+
+    /*--------------------skill_page---------------------*/
+
+    .skill-page {
+        height: 95vh;
+        width: 98.9vw;
+        padding: 5rem 0rem;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 195vh;
+        width: 98.9vw;
+        padding-top: 5rem;
+    }
+
+    .resume_page .my_info {
+        padding: 10rem 9rem;
+        display: flex;
+        gap: 5rem;
+        height: 185vh;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 180vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 70vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------arrow button---------------------*/
+
+    .buttons {
+        position: fixed;
+        top: 90%;
+        right: 4rem;
+        z-index: 1000;
+    }
+
+
+
+
+}
+
+/*------------------------------------------------
+                width : 950px
+--------------------------------------------------*/
+
+@media (max-width : 950px) {
+    html {
+        font-size: 45%;
+    }
+
+    /*--------------------Home_page---------------------*/
+
+    .about_page {
+        height: 140vh;
+        width: 98.9vw;
+    }
+
+    .home_page .container .main .box1 {
+        height: 100%;
+        width: 40vw;
+        padding: 15rem 0rem;
+        padding-right: 6rem;
+    }
+
+    .home_page .container .main .box2 .main .image {
+        height: 30rem;
+        width: 48rem;
+        position: relative;
+        top: 12rem;
+        left: 7rem;
+        color: #fff;
+        box-shadow: 1px 1px 5px 1.5px #000;
+    }
+
+    /*--------------------About_page---------------------*/
+
+    .about_page .main .image img {
+        height: 52rem;
+        width: 100%;
+    }
+
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-top: -3rem; */
+        padding: 0rem 10rem;
+        flex-wrap: wrap;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 185vh;
+        width: 98.9vw;
+        padding-top: 5rem;
+    }
+
+    .resume_page .my_info {
+        padding: 10rem 9rem;
+        display: flex;
+        gap: 5rem;
+        height: 170vh;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 170vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 65vh;
+        width: 98.9vw;
+    }
+
+
+}
+
+/*------------------------------------------------
+                width : 888px
+--------------------------------------------------*/
+
+
+@media (max-width : 888px) {
+    html {
+        font-size: 42%;
+    }
+
+    /*--------------------About_page---------------------*/
+
+    .about_page {
+        height: 130vh;
+        width: 98.9vw;
+    }
+
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -3rem;
+        padding: 0rem 10rem;
+        flex-wrap: wrap;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 175vh;
+        width: 98.9vw;
+        padding-top: 5rem;
+    }
+
+    .resume_page .my_info {
+        padding: 10rem 9rem;
+        display: flex;
+        gap: 5rem;
+        height: 160vh;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 160vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 60vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------arrow button---------------------*/
+
+    .buttons {
+        position: fixed;
+        top: 85%;
+        right: 4rem;
+        z-index: 1000;
+    }
+
+    .buttons button {
+        height: 5.5rem;
+        width: 5.5rem;
+        background: #0066cc;
+        border: none;
+        border-radius: 50%;
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+}
+
+/*------------------------------------------------
+                width : 830px
+--------------------------------------------------*/
+
+
+@media (max-width : 830px) {
+    html {
+        font-size: 40%;
+    }
+
+    /*--------------------About_page---------------------*/
+
+    .about_page {
+        height: 120vh;
+        width: 98.9vw;
+    }
+
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -5rem;
+        padding: 0rem 10rem;
+        flex-wrap: wrap;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 160vh;
+        width: 98.9vw;
+        padding-top: 5rem;
+    }
+
+    /*--------------------Skill_page---------------------*/
+
+    .skill-page {
+        height: 90vh;
+        width: 98.9vw;
+        padding: 5rem 0rem;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 155vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 57vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------arrow button---------------------*/
+
+    .buttons {
+        position: fixed;
+        top: 85%;
+        right: 4rem;
+        z-index: 1000;
+    }
+
+    .buttons button {
+        height: 6.5rem;
+        width: 6.5rem;
+        background: #0066cc;
+        border: none;
+        border-radius: 50%;
+        font-size: 3rem;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+/*------------------------------------------------
+                width : 800px
+--------------------------------------------------*/
+
+@media (max-width : 800px) {
+    html {
+        font-size: 38%;
+    }
+
+    /*--------------------About_page---------------------*/
+
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -10rem;
+        padding: 0rem 10rem;
+        flex-wrap: wrap;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 155vh;
+        width: 98.9vw;
+        padding-top: 5rem;
+    }
+
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 145vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 55vh;
+        width: 98.9vw;
+    }
+
+
+}
+
+
+
+
+
+/* ************************************************
+                   For Tablet
+***************************************************/
+
+/*------------------------------------------------
+                width : 768px
+--------------------------------------------------*/
+
+@media (max-width : 768px) {
+    html {
+        font-size: 47%;
+    }
+
+
+    /*--------------------Home_page---------------------*/
+
+    .home_page .container .main .box1 {
+        height: 100%;
+        width: 47vw;
+        padding: 10rem 0rem;
+        padding-right: 6rem;
+    }
+
+    .home_page .container .main .box1 .contant p {
+        font-size: 2.8rem;
+    }
+
+    .home_page .container .main .box2 .main .image {
+        height: 30rem;
+        width: 40rem;
+        position: relative;
+        top: 10rem;
+        left: 6rem;
+        color: #fff;
+        box-shadow: 1px 1px 5px 1.5px #000;
+    }
+
+    .home_page .container .main .box2 .main .image .user {
+        position: absolute;
+        top: -8rem;
+        left: -5rem;
+        height: 20rem;
+        width: 12rem;
+        background-color: #202427;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 1px -1px 8px 1.5px #000;
+        display: none;
+    }
+
+    .home_page .container .main .box2 .main .image .profile {
+        height: 39rem;
+        width: 16rem;
+        background: rgba(158, 160, 161, 1);
+        position: absolute;
+        top: 5rem;
+        right: -9rem;
+        text-align: center;
+        padding: 0 .3rem;
+        padding-top: 13rem;
+        color: #000;
+        box-shadow: -2px 1.5px 10px 1.5px #000;
+        display: none;
+    }
+
+    .home_page .container .main .box2 .main .card {
+        height: 12rem;
+        width: 40rem;
+        background-color: #fff;
+        position: absolute;
+        top: 32rem;
+        left: -5rem;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+        box-shadow: 1px 1px 10px 1.5px #000;
+    }
+
+
+    /*--------------------About_page---------------------*/
+
+    .about_page {
+        height: 200vh;
+        width: 98.9vw;
+    }
+
+    .about_page .main {
+        padding: 2rem 5rem;
+        margin-top: 2rem;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -5rem;
+        padding: 58rem 10rem;
+        flex-wrap: wrap;
+    }
+
+    /*--------------------Skill_page---------------------*/
+
+    .skill-page {
+        height: 120vh;
+        width: 98.9vw;
+        margin-top: 10rem;
+    }
+
+    .skill-page .heading {
+        padding-top: 0rem;
+        text-align: center;
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2.5rem;
+        padding: 0 10rem;
+    }
+
+    .skill-page .main {
+        margin-top: 5rem;
+        padding: 2rem 0rem;
+        height: 85vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .skill-container .bar {
+        margin-top: 1rem;
+        height: 1rem;
+        width: 70rem;
+        background-color: #c5c5c5;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 335vh;
+        width: 100%;
+    }
+
+    .resume_page .my_info {
+        padding: 10rem 0rem;
+        display: flex;
+        gap: 5rem;
+        height: 320vh;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume_page .projects .Other_project .line {
+        height: 23rem;
+        width: 0.2rem;
+        background-color: #0563bb;
+    }
+
+    .resume_page .box {
+        height: 100%;
+        width: 70%;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 245vh;
+        width: 98.9vw;
+    }
+
+    .project_page .slider {
+        margin-top: -38%;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 72vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------arrow button---------------------*/
+
+    .buttons {
+        position: fixed;
+        top: 85%;
+        right: 4rem;
+        z-index: 1000;
+    }
+
+    .buttons button {
+        height: 5.5rem;
+        width: 5.5rem;
+        background: #0066cc;
+        border: none;
+        border-radius: 50%;
+        font-size: 2.5rem;
+        color: #fff;
+        cursor: pointer;
+    }
+
+}
+
+/*------------------------------------------------
+                width : 750px
+--------------------------------------------------*/
+@media (max-width : 750px) {
+    html {
+        font-size: 43%;
+    }
+
+    /*--------------------About_page---------------------*/
+
+    .about_page .main .contant {
+        height: 100%;
+        width: 76rem;
+        padding: 3.5rem 5rem;
+    }
+
+    /*--------------------skill_page---------------------*/
+
+    .skill-page {
+        height: 120vh;
+        width: 98.9vw;
+        margin-top: 0rem;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 305vh;
+        width: 100%;
+    }
+
+    .resume_page .my_info {
+        padding: 10rem 0rem;
+        display: flex;
+        gap: 5rem;
+        height: 300vh;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume_page .projects .Other_project .line {
+        height: 21rem;
+        width: 0.2rem;
+        background-color: #0563bb;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 225vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 62vh;
+        width: 98.9vw;
+    }
+
+
+}
+
+/*------------------------------------------------
+                width : 654px
+--------------------------------------------------*/
+
+@media (max-width : 654px) {
+    html {
+        font-size: 40%;
+    }
+
+    /*--------------------Skill_page---------------------*/
+    .skill-page {
+        height: 100vh;
+        width: 98.9vw;
+    }
+
+    .skill-page .main {
+        margin-top: 0rem;
+        padding: 2rem 0rem;
+        height: 85vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 285vh;
+        width: 100%;
+    }
+
+    .resume_page .my_info {
+        padding: 10rem 0rem;
+        display: flex;
+        gap: 5rem;
+        height: 280vh;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 210vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 57vh;
+        width: 98.9vw;
+    }
+
+}
+
+/*------------------------------------------------
+                width : 650px
+--------------------------------------------------*/
+
+@media (max-width : 650px) {
+    html {
+        font-size: 45%;
+    }
+
+    /*--------------------header---------------------*/
+
+    header nav ul {
+        height: 80vh;
+        width: 98.9vw;
+        background-color: rgb(19, 23, 26);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        position: relative;
+        top: -50rem;
+        left: -12.2rem;
+        padding: 5rem 0;
+        transition: top 0.3s ease-in-out;
+    }
+
+    header nav .nav-links {
+        gap: 3rem;
+    }
+
+    .slider {
+        top: 36rem;
+    }
+
+    header nav .nav-links li a {
+        display: flex;
+        gap: 2rem;
+        font-size: 2.5rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    header nav .nav-links li a i {
+        font-size: 3rem;
+    }
+
+
+    header .menu #closeBtn {
+        display: none;
+    }
+
+
+
+    header .menu {
+        display: block;
+        color: #fff;
+        font-size: 4rem;
+        position: relative;
+        right: 21rem;
+        z-index: 100;
+    }
+
+
+    /*--------------------home_page---------------------*/
+
+    .home_page .container .main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .home_page .container .main .box1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 7rem 3rem;
+
+    }
+
+    .home_page .container .main .box1 .contant {
+        width: 55rem;
+        padding: 0 3rem;
+    }
+
+    .home_page .container .main .box1 .contant h1 {
+        font-size: 5rem;
+        color: #fff;
+    }
+
+    .home_page .container .main .box1 .contant p {
+        font-size: 4rem;
+        color: #16d5e2;
+        padding-top: 1rem;
+    }
+
+    .home_page .container .main .box1 .contant .pra {
+        font-size: 2rem;
+        color: #fff;
+        padding-top: 2rem;
+    }
+
+    .home_page .container .main .box1 .contant .icon {
+        padding-top: 0.5rem;
+    }
+
+    .home_page .container .main .box1 .contant button {
+        margin-top: 5rem;
+        height: 4rem;
+        width: 20rem;
+        background: transparent;
+        color: #fff;
+        font-size: 2rem;
+        border: 2px solid #fff;
+        border-radius: 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home_page .container .main .box1 .contant button p {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+
+    .home_page .container .main .box2 {
+        height: 100%;
+        width: 50vw;
+        display: none;
+    }
+
+    /*--------------------skill_page---------------------*/
+
+    .skill-page {
+        height: 110vh;
+        width: 98.9vw;
+        padding-top: 10rem;
+    }
+
+    .skill-container .bar {
+        margin-top: 1rem;
+        height: 1rem;
+        width: 60rem;
+        background-color: #c5c5c5;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 320vh;
+        width: 100%;
+    }
+
+    .resume_page .my_info {
+        padding: 10rem 0rem;
+        display: flex;
+        gap: 5rem;
+        height: 308vh;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume_page .projects .Other_project .line {
+        height: 26rem;
+        width: 0.2rem;
+        background-color: #0563bb;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 220vh;
+        width: 98.9vw;
+    }
+
+    .project_page .container .filterable_card .card {
+        height: 18rem;
+        width: 32rem;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .project_page .slider {
+        margin-top: -71%;
+    }
+
+    .project_page .container .filterable_card .card .card_body p {
+        margin-top: 1.2rem;
+        font-size: 1.2rem;
+        color: #787b7e;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 100vh;
+        width: 98.9vw;
+    }
+
+    /*------------------------------------------------
+                width : 589px
+    --------------------------------------------------*/
+
+    @media (max-width : 589px) {
+        html {
+            font-size: 40%;
+        }
+
+        /*--------------------header---------------------*/
+
+        header nav ul {
+            height: 80vh;
+            width: 98.9vw;
+            background-color: rgb(19, 23, 26);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3rem;
+            position: relative;
+            top: -50rem;
+            left: -12.2rem;
+            padding: 5rem 0;
+            transition: top 0.3s ease-in-out;
+        }
+
+        header nav .nav-links {
+            gap: 3rem;
+        }
+
+        .slider {
+            top: 40rem;
+        }
+
+        /*--------------------resume_page---------------------*/
+
+        .resume_page {
+            height: 305vh;
+            width: 100%;
+        }
+
+        /*--------------------project_page---------------------*/
+
+        .project_page {
+            height: 200vh;
+            width: 98.9vw;
+        }
+
+        /*--------------------contact_page---------------------*/
+
+        .contact_page {
+            height: 95vh;
+            width: 98.9vw;
+        }
+
+
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 7rem;
+            padding: 7rem;
+            max-width: 120rem;
+            margin: auto;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /*--------------------arrow button---------------------*/
+
+        .buttons {
+            position: fixed;
+            top: 85%;
+            right: 4rem;
+            z-index: 1000;
+        }
+
+        .buttons button {
+            height: 6rem;
+            width: 6rem;
+            background: #0066cc;
+            border: none;
+            border-radius: 50%;
+            font-size: 3rem;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+
+
+    /*------------------------------------------------
+                width : 530px
+    --------------------------------------------------*/
+    @media (max-width : 530px) {
+        html {
+            font-size: 40%;
+        }
+
+        /*--------------------about_page---------------------*/
+
+
+        .about_page {
+            height: 185vh;
+            width: 98.9vw;
+        }
+
+        .stats-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0rem;
+            padding: 40rem 10rem;
+            flex-wrap: wrap;
+        }
+
+        /*--------------------skill_page---------------------*/
+
+        .skill-page {
+            height: 90vh;
+            width: 98.9vw;
+            padding-top: 0rem;
+        }
+
+        .skill-page .heading {
+            text-align: center;
+            display: flex;
+            gap: 2rem;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2.5rem;
+            padding: 0 10rem;
+        }
+
+
+
+        /*--------------------project_page---------------------*/
+
+        .project_page {
+            height: 415vh;
+            width: 98.9vw;
+        }
+
+        .project_page .container .filterable_card {
+            width: 100%;
+            flex-grow: 2;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(31rem, 1fr));
+            gap: 5rem;
+            justify-items: center;
+            align-items: center;
+            padding: 0 8rem;
+        }
+
+        .project_page .container .filterable_card .card {
+            height: 25rem;
+            width: 50rem;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .project_page .slider {
+            margin-top: -55%;
+        }
+
+        .project_page .container .filterable_card .card .card_body h1 {
+            font-size: 3rem;
+
+        }
+
+        .project_page .container .filterable_card .card .card_body p {
+            margin-top: 1.2rem;
+            font-size: 2rem;
+            color: #787b7e;
+        }
+
+        .project_page .container .filterable_card .card .card_body .icon {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 5rem;
+            margin-right: 1rem;
+        }
+
+        .project_page .container .filterable_card .card .card_body .icon i {
+            font-size: 4rem;
+            font-weight: 200;
+            color: #787b7e;
+        }
+
+
+
+
+
+    }
+
+    /*------------------------------------------------
+                width : 512px
+--------------------------------------------------*/
+    @media (max-width : 512px) {
+        html {
+            font-size: 37.5%;
+        }
+
+        /*--------------------header---------------------*/
+
+        header nav ul {
+            height: 80vh;
+            width: 98.9vw;
+            background-color: rgb(19, 23, 26);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3rem;
+            position: relative;
+            top: -50rem;
+            left: -12.3rem;
+            padding: 5rem 0;
+            transition: top 0.3s ease-in-out;
+        }
+
+        header nav .nav-links {
+            gap: 3rem;
+        }
+
+        .slider {
+            top: 42rem;
+        }
+
+        /*--------------------home_page---------------------*/
+
+        .home_page .container .main .box1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 15rem 3rem;
+        }
+
+        /*--------------------about_page---------------------*/
+
+
+        .about_page {
+            height: 185vh;
+            width: 98.9vw;
+        }
+
+        .stats-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0rem;
+            padding: 40rem 10rem;
+            flex-wrap: wrap;
+        }
+
+
+        /*--------------------skill_page---------------------*/
+
+        .skill-page {
+            height: 85vh;
+            width: 98.9vw;
+            padding-top: 0rem;
+        }
+
+        .skill-page .main {
+            margin-top: 0rem;
+            padding: 0rem 2rem;
+            height: 75vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        /*--------------------resume_page---------------------*/
+
+        .resume_page {
+            height: 270vh;
+            width: 100%;
+        }
+
+
+        .resume_page .my_info {
+            padding: 10rem 0rem;
+            display: flex;
+            gap: 5rem;
+            height: 260vh;
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /*--------------------project_page---------------------*/
+
+
+        .project_page {
+            height: 390vh;
+            width: 98.9vw;
+        }
+
+        .project_page .container .filterable_card {
+            width: 100%;
+            flex-grow: 2;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+            gap: 5rem;
+            justify-items: center;
+            align-items: center;
+            padding: 0 8rem;
+        }
+
+        .project_page .slider {
+            margin-top: -55%;
+        }
+
+        /*--------------------contact_page---------------------*/
+
+        .contact_page {
+            height: 85vh;
+            width: 98.9vw;
+        }
+
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            padding: 6rem;
+            max-width: 120rem;
+            margin: auto;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        /*--------------------arrow button---------------------*/
+
+        .buttons {
+            position: fixed;
+            top: 85%;
+            right: 4rem;
+            z-index: 1000;
+        }
+
+        .buttons button {
+            height: 6.5rem;
+            width: 6.5rem;
+            background: #0066cc;
+            border: none;
+            border-radius: 50%;
+            font-size: 3rem;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+
+}
+
+/*------------------------------------------------
+                width : 460px
+--------------------------------------------------*/
+
+@media (max-width : 460px) {
+    html {
+        font-size: 35%;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 255vh;
+        width: 100%;
+    }
+
+
+    .resume_page .my_info {
+        padding: 10rem 0rem;
+        display: flex;
+        gap: 5rem;
+        height: 245vh;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 367vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 85vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------footer---------------------*/
+
+    footer {
+        height: 35vh;
+        width: 98.9vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*------------------------------------------------
+                width : 444px
+--------------------------------------------------*/
+
+@media (max-width : 444px) {
+    html {
+        font-size: 35%;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 372vh;
+        width: 98.9vw;
+    }
+}
+
+
+
+
+
+
+
+/* ************************************************
+                   For Phone
+***************************************************/
+
+/*------------------------------------------------
+                width : 425px
+    --------------------------------------------------*/
+
+@media (max-width : 425px) {
+    html {
+        font-size: 35%;
+    }
+
+    /*--------------------header---------------------*/
+
+    header nav ul {
+        height: 80vh;
+        width: 98.9vw;
+        background-color: rgb(19, 23, 26);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        position: relative;
+        top: -50rem;
+        left: -12.3rem;
+        padding: 15rem 0;
+        transition: top 0.3s ease-in-out;
+        z-index: 100;
+    }
+
+    header nav .nav-links {
+        gap: 3rem;
+    }
+
+    .slider {
+        top: 45rem;
+    }
+
+    header nav ul li a {
+        font-size: .5rem;
+        color: #fff;
+        text-decoration: none;
+    }
+
+
+    header .menu #closeBtn {
+        display: none;
+    }
+
+
+
+    header .menu {
+        display: block;
+        color: #fff;
+        font-size: 4rem;
+    }
+
+    /*--------------------home_page---------------------*/
+
+    .home_page .container .main .box1 {
+        height: 100%;
+        width: 100%;
+        padding: 17rem 0rem;
+    }
+
+    .home_page .container .main .box1 .contant {
+        width: 55rem;
+        padding: 0px 0rem;
+    }
+
+
+    .home_page .container .main .box1 .contant h1 {
+        font-size: 4rem;
+        color: #fff;
+    }
+
+    .home_page .container .main .box1 .contant p {
+        font-size: 4.5rem;
+        color: #16d5e2;
+        padding-top: 1rem;
+    }
+
+    .home_page .container .main .box1 .contant .pra {
+        font-size: 2rem;
+        color: #fff;
+        padding-top: 2rem;
+        line-height: normal;
+    }
+
+    .home_page .container .main .box1 .contant .icon i {
+        font-size: 4.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .home_page .container .main .box1 .contant button {
+        margin-top: 5rem;
+        height: 6rem;
+        width: 24rem;
+        background: transparent;
+        color: #fff;
+        font-size: 2.3rem;
+        border: 2px solid #fff;
+        border-radius: 18px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home_page .container .main .box1 .contant button i {
+        font-size: 2.3rem;
+        margin-top: 0.8rem;
+    }
+
+    /*--------------------About_page---------------------*/
+
+    .about_page {
+        height: 165vh;
+        width: 98.9vw;
+    }
+
+    .about_page .main {
+        padding: 2rem 5rem;
+        margin-top: 2rem;
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -5rem;
+        padding: 0 10rem;
+        padding-top: 40rem;
+        flex-wrap: wrap;
+    }
+
+    .about_page .main .contant {
+        height: 100%;
+        width: 76rem;
+        padding: 3.5rem 5rem;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 375vh;
+        width: 98.9vw;
+    }
+
+    .project_page .slider {
+        margin-top: -65%;
+    }
+
+
+}
+
+/*------------------------------------------------
+                    width : 400px
+    --------------------------------------------------*/
+
+@media (max-width : 400px) {
+    html {
+        font-size: 30%;
+    }
+
+    /*--------------------header---------------------*/
+
+    header nav ul {
+        height: 80vh;
+        width: 98.9vw;
+        background-color: rgb(19, 23, 26);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        position: relative;
+        top: -50rem;
+        left: -12.2rem;
+        padding: 5rem 0;
+        transition: top 0.3s ease-in-out;
+    }
+
+    header nav .nav-links {
+        gap: 3rem;
+    }
+
+    .slider {
+        top: 50rem;
+    }
+
+
+    /*--------------------home_page---------------------*/
+
+    .home_page .container .main .box1 {
+        height: 100%;
+        width: 100%;
+        padding: 20rem 0rem;
+    }
+
+    /*--------------------About_page---------------------*/
+
+    .about_page {
+        height: 140vh;
+        width: 98.9vw;
+    }
+
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -5rem;
+        padding: 0 10rem;
+        padding-top: 30rem;
+        flex-wrap: wrap;
+    }
+
+    .skill-page {
+        height: 85vh;
+        width: 98.9vw;
+        padding-top: 10rem;
+    }
+
+    .skill-page .main {
+        margin-top: 0rem;
+        padding: 0rem 2rem;
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /*--------------------skill_page---------------------*/
+
+    .skill-page {
+        height: 80vh;
+        width: 98.9vw;
+        padding-top: 10rem;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 220vh;
+        width: 100%;
+    }
+
+    .resume_page .my_info {
+        padding: 10rem 0rem;
+        display: flex;
+        gap: 5rem;
+        height: 210vh;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 322vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 70vh;
+        width: 98.9vw;
+    }
+}
+
+/*------------------------------------------------
+                width : 375px
+    --------------------------------------------------*/
+
+@media (max-width : 375px) {
+    html {
+        font-size: 32%;
+    }
+
+    header nav ul {
+        height: 80vh;
+        width: 98.9vw;
+        background-color: rgb(19, 23, 26);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        position: relative;
+        top: -50rem;
+        left: -12.2rem;
+        padding: 5rem 0;
+        transition: top 0.3s ease-in-out;
+    }
+
+    header nav .nav-links {
+        gap: 3rem;
+    }
+
+    .slider {
+        top: 50rem;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 230vh;
+        width: 100%;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 342vh;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 75vh;
+        width: 98.9vw;
+    }
+
+    /*------------------------------------------------
+                width : 350px
+    --------------------------------------------------*/
+
+    @media (max-width : 350px) {
+        html {
+            font-size: 28%;
+        }
+
+
+        header nav ul {
+            height: 80vh;
+            width: 98.9vw;
+            background-color: rgb(19, 23, 26);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 3rem;
+            position: relative;
+            top: -55rem;
+            left: -12.2rem;
+            padding: 5rem 0;
+            transition: top 0.3s ease-in-out;
+        }
+
+        header nav .nav-links {
+            gap: 3rem;
+        }
+
+        .slider {
+            top: 55rem;
+        }
+
+        .home_page {
+            height: 90vh;
+            width: 98.9vw;
+            background-color: rgb(19 23 26);
+        }
+
+        .home_page .container .main .box1 {
+            height: 100%;
+            width: 100%;
+            padding: 25rem 0rem;
+        }
+
+        /*--------------------About_page---------------------*/
+
+        .about_page {
+            height: 130vh;
+            width: 98.9vw;
+        }
+
+        .stats-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -5rem;
+            padding: 0 10rem;
+            padding-top: 20rem;
+            flex-wrap: wrap;
+        }
+
+        /*--------------------resume_page---------------------*/
+
+        .resume_page {
+            height: 205vh;
+            width: 100%;
+        }
+
+        .resume_page .my_info {
+            padding: 10rem 0rem;
+            display: flex;
+            gap: 5rem;
+            height: 195vh;
+            width: 100%;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /*--------------------project_page---------------------*/
+
+        .project_page {
+            height: 300vh;
+            width: 98.9vw;
+        }
+
+        /*--------------------contact_page---------------------*/
+
+        .contact_page {
+            height: 65vh;
+            width: 98.9vw;
+        }
+
+
+    }
+
+    /*------------------------------------------------
+                        width : 320px
+    --------------------------------------------------*/
+
+
+
+    @media (max-width : 320px) {
+        html {
+            font-size: 28%;
+        }
+
+        /*--------------------home_page---------------------*/
+
+
+        .home_page {
+            height: 84vh;
+        }
+
+        /*--------------------project_page---------------------*/
+
+        .project_page {
+            height: 303vh;
+            width: 98.9vw;
+        }
+
+        /*--------------------arrow buttons---------------------*/
+
+        .buttons {
+            position: fixed;
+            top: 75%;
+            right: 4rem;
+            z-index: 1000;
+        }
+
+    }
+}
