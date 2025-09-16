@@ -3147,11 +3147,12 @@ footer .container .footer a {
                 width : 350px
     --------------------------------------------------*/
 
-    @media (max-width : 350px) {
-        html {
-            font-size: 28%;
-        }
 
+
+    @media (max-width : 360px) {
+        html {
+            font-size: 30%;
+        }
 
         header nav ul {
             height: 80vh;
@@ -3163,13 +3164,16 @@ footer .container .footer a {
             gap: 3rem;
             position: relative;
             top: -55rem;
-            left: -12.2rem;
+            left: -4rem;
             padding: 5rem 0;
             transition: top 0.3s ease-in-out;
         }
 
         header nav .nav-links {
             gap: 3rem;
+            position: relative;
+            left: -9rem;
+            width: 94.6vw;
         }
 
         .slider {
@@ -3182,10 +3186,27 @@ footer .container .footer a {
             background-color: rgb(19 23 26);
         }
 
+
+
+        header img {
+            height: 10rem;
+            width: 14rem;
+            position: relative;
+            z-index: 200;
+        }
+
         .home_page .container .main .box1 {
             height: 100%;
             width: 100%;
-            padding: 25rem 0rem;
+            padding: 33rem 4rem;
+        }
+
+        header .menu {
+            display: block;
+            color: #fff;
+            font-size: 6rem;
+            margin-top: -13.5px;
+            margin-left: -3rem;
         }
 
         /*--------------------About_page---------------------*/
