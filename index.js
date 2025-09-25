@@ -21,21 +21,19 @@ let navLinks = document.getElementById("navLinks");
 let manuBtn = document.getElementById("menuBtn");
 let closeBtn = document.getElementById("closeBtn");
 
+
 manuBtn.addEventListener("click", function () {
-    navLinks.classList.add('slider');
+    navLinks.style.left = "0";
     manuBtn.style.display = "none";
-    closeBtn.style.display = "block";
-});
+    closeBtn.style.display = "block";   
+})
 
 closeBtn.addEventListener("click", function () {
-    navLinks.classList.remove('slider');
+    navLinks.style.left = "-100%";
     manuBtn.style.display = "block";
     closeBtn.style.display = "none"
 });
 
-if (window.innerWidth >= 768) {
-    
-}
 
 // ====================================
 //             type writer
