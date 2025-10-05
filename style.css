@@ -38,7 +38,7 @@ body {
 
 header {
     height: 14vh;
-    width: 98.9vw;
+    width: 100vw;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -127,7 +127,7 @@ header .menu {
 
 .home_page {
     height: 100vh;
-    width: 98.9vw;
+    width: 100vw;
     background-color: rgb(19 23 26);
 }
 
@@ -2822,153 +2822,220 @@ footer .container .footer a {
 
     /*--------------------header---------------------*/
 
-    header nav ul {
-        height: 80vh;
-        width: 98.9vw;
-        background-color: rgb(19, 23, 26);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 3rem;
-        position: relative;
-        top: -50rem;
-        left: -12.3rem;
-        padding: 15rem 0;
-        transition: top 0.3s ease-in-out;
-        z-index: 100;
+    header {
+            width: 127vw;
+            height: 12vh;
+        }
+
+        header img {
+            height: 10rem;
+            width: 14rem;
+            z-index: 200;
+        }
+
+        header nav .nav-links {
+            height: 100%;
+            width: 50vw;
+            background-color: rgb(19 23 26);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: fixed;
+            top: 5rem;
+            left: -100%;
+            gap: 8rem;
+            padding: 20rem 0;
+            transition: left 0.3s ease-in-out;
+        }
+
+
+
+        header nav .nav-links li a {
+            text-decoration: none;
+            color: #ddd;
+            font-size: 4.5rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 0.8rem 1.6rem;
+            border-radius: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        header nav .nav-links li a i {
+            font-size: 4.5rem;
+        }
+
+        /* Hover Glow */
+        .nav-links li a:hover {
+            color: #fff;
+            background: rgba(0, 255, 127, 0.1);
+            box-shadow: 0 0 20px rgba(0, 255, 127, 0.6),
+                0 0 40px rgba(0, 198, 255, 0.4);
+        }
+
+        /* Gradient underline (default hidden) */
+        .nav-links li a::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, #ff0057, #00c6ff, #00ff7f, #ff0057);
+            background-size: 300% 100%;
+            /* important for moving effect */
+            border-radius: 2px;
+            transition: width 0.4s ease;
+        }
+
+        /* Jab hover kare tab underline dikhe + move kare */
+        .nav-links li a:hover::after {
+            width: 100%;
+            animation: gradient-move 3s linear infinite;
+        }
+
+        /* Gradient wave animation */
+        @keyframes gradient-move {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* Icon neon effect */
+        .nav-links li a i {
+            font-size: 5rem;
+            transition: transform 0.4s, color 0.3s, text-shadow 0.3s;
+        }
+
+        .nav-links li a:hover i {
+            transform: rotate(20deg) scale(1.2);
+            color: #00ff7f;
+            text-shadow: 0 0 10px #00ff7f, 0 0 20px #00c6ff;
+        }
+
+        header .menu {
+            display: block;
+            color: #fff;
+            font-size: 6rem;
+            margin-top: -13.5px;
+            margin-left: 20rem;
+        }
+
+        /*--------------------Home_page---------------------*/
+
+        .home_page {
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(19 23 26);
+        }
+
+        .home_page .container .main .box1 {
+            height: 100%;
+            width: 100%;
+            padding: 33rem 4rem;
+        }
+
+
+
+        /*--------------------About_page---------------------*/
+
+        .about_page {
+            height: 100%;
+            width: 100vw;
+        }
+
+        .stats-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -5rem;
+            padding: 0 10rem;
+            padding-top: 5rem;
+            flex-wrap: wrap;
+        }
+
+        .skill-page {
+            height: 100%;
+            width: 98.9vw;
+            padding-top: 10rem;
+        }
+
+        .skill-page .main {
+            margin-top: 5rem;
+            padding: 0rem 2rem;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
     }
 
-    header nav .nav-links {
-        gap: 3rem;
-    }
+    /*--------------------resume_page---------------------*/
 
-    .slider {
-        top: 45rem;
-    }
-
-    header nav ul li a {
-        font-size: .5rem;
-        color: #fff;
-        text-decoration: none;
-    }
-
-
-    header .menu #closeBtn {
-        display: none;
-    }
-
-
-
-    header .menu {
-        display: block;
-        color: #fff;
-        font-size: 4rem;
-    }
-
-    /*--------------------home_page---------------------*/
-
-    .home_page .container .main .box1 {
+    .resume_page {
         height: 100%;
         width: 100%;
-        padding: 17rem 0rem;
     }
 
-    .home_page .container .main .box1 .contant {
-        width: 55rem;
-        padding: 0px 0rem;
-    }
-
-
-    .home_page .container .main .box1 .contant h1 {
-        font-size: 4rem;
-        color: #fff;
-    }
-
-    .home_page .container .main .box1 .contant p {
-        font-size: 4.5rem;
-        color: #16d5e2;
-        padding-top: 1rem;
-    }
-
-    .home_page .container .main .box1 .contant .pra {
-        font-size: 2rem;
-        color: #fff;
-        padding-top: 2rem;
-        line-height: normal;
-    }
-
-    .home_page .container .main .box1 .contant .icon i {
-        font-size: 4.5rem;
-        padding-top: 0.5rem;
-    }
-
-    .home_page .container .main .box1 .contant button {
-        margin-top: 5rem;
-        height: 6rem;
-        width: 24rem;
-        background: transparent;
-        color: #fff;
-        font-size: 2.3rem;
-        border: 2px solid #fff;
-        border-radius: 18px;
-        cursor: pointer;
+    .resume_page .my_info {
+        /* padding: 10rem 0rem; */
         display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .home_page .container .main .box1 .contant button i {
-        font-size: 2.3rem;
-        margin-top: 0.8rem;
-    }
-
-    /*--------------------About_page---------------------*/
-
-    .about_page {
-        height: 165vh;
-        width: 98.9vw;
-    }
-
-    .about_page .main {
-        padding: 2rem 5rem;
-        margin-top: 2rem;
+        gap: 5rem;
+        height: 195vh;
         width: 100%;
-        height: 80vh;
-        display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
     }
 
-    .stats-section {
+    .resume_page .my_info {
+        /* padding: 10rem 0rem; */
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: -5rem;
-        padding: 0 10rem;
-        padding-top: 40rem;
-        flex-wrap: wrap;
-    }
-
-    .about_page .main .contant {
+        gap: 5rem;
         height: 100%;
-        width: 76rem;
-        padding: 3.5rem 5rem;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
 
     /*--------------------project_page---------------------*/
 
     .project_page {
-        height: 375vh;
-        width: 98.9vw;
-    }
-
-    .project_page .slider {
-        margin-top: -65%;
+        height: 100%;
+        width: 100vw;
+        padding: 7rem 0;
     }
 
 
-}
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 100%;
+        width: 100vw;
+    }
+
+    footer {
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 /*------------------------------------------------
                     width : 400px
@@ -2981,94 +3048,188 @@ footer .container .footer a {
 
     /*--------------------header---------------------*/
 
-    header nav ul {
-        height: 80vh;
-        width: 98.9vw;
-        background-color: rgb(19, 23, 26);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 3rem;
-        position: relative;
-        top: -50rem;
-        left: -12.2rem;
-        padding: 5rem 0;
-        transition: top 0.3s ease-in-out;
-    }
+    header {
+            width: 127vw;
+            height: 12vh;
+        }
 
-    header nav .nav-links {
-        gap: 3rem;
-    }
+        header img {
+            height: 10rem;
+            width: 14rem;
+            z-index: 200;
+        }
 
-    .slider {
-        top: 50rem;
-    }
+        header nav .nav-links {
+            height: 100%;
+            width: 50vw;
+            background-color: rgb(19 23 26);
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: fixed;
+            top: 5rem;
+            left: -100%;
+            gap: 8rem;
+            padding: 20rem 0;
+            transition: left 0.3s ease-in-out;
+        }
 
 
-    /*--------------------home_page---------------------*/
 
-    .home_page .container .main .box1 {
-        height: 100%;
-        width: 100%;
-        padding: 20rem 0rem;
-    }
+        header nav .nav-links li a {
+            text-decoration: none;
+            color: #ddd;
+            font-size: 4.5rem;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding: 0.8rem 1.6rem;
+            border-radius: 0.8rem;
+            transition: all 0.3s ease;
+        }
 
-    /*--------------------About_page---------------------*/
+        header nav .nav-links li a i {
+            font-size: 4.5rem;
+        }
 
-    .about_page {
-        height: 140vh;
-        width: 98.9vw;
-    }
+        /* Hover Glow */
+        .nav-links li a:hover {
+            color: #fff;
+            background: rgba(0, 255, 127, 0.1);
+            box-shadow: 0 0 20px rgba(0, 255, 127, 0.6),
+                0 0 40px rgba(0, 198, 255, 0.4);
+        }
 
-    .stats-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: -5rem;
-        padding: 0 10rem;
-        padding-top: 30rem;
-        flex-wrap: wrap;
-    }
+        /* Gradient underline (default hidden) */
+        .nav-links li a::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0%;
+            height: 3px;
+            background: linear-gradient(90deg, #ff0057, #00c6ff, #00ff7f, #ff0057);
+            background-size: 300% 100%;
+            /* important for moving effect */
+            border-radius: 2px;
+            transition: width 0.4s ease;
+        }
 
-    .skill-page {
-        height: 85vh;
-        width: 98.9vw;
-        padding-top: 10rem;
-    }
+        /* Jab hover kare tab underline dikhe + move kare */
+        .nav-links li a:hover::after {
+            width: 100%;
+            animation: gradient-move 3s linear infinite;
+        }
 
-    .skill-page .main {
-        margin-top: 0rem;
-        padding: 0rem 2rem;
-        height: 60vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
+        /* Gradient wave animation */
+        @keyframes gradient-move {
+            0% {
+                background-position: 0% 50%;
+            }
 
-    /*--------------------skill_page---------------------*/
+            100% {
+                background-position: 100% 50%;
+            }
+        }
 
-    .skill-page {
-        height: 80vh;
-        width: 98.9vw;
-        padding-top: 10rem;
+        /* Icon neon effect */
+        .nav-links li a i {
+            font-size: 5rem;
+            transition: transform 0.4s, color 0.3s, text-shadow 0.3s;
+        }
+
+        .nav-links li a:hover i {
+            transform: rotate(20deg) scale(1.2);
+            color: #00ff7f;
+            text-shadow: 0 0 10px #00ff7f, 0 0 20px #00c6ff;
+        }
+
+        header .menu {
+            display: block;
+            color: #fff;
+            font-size: 6rem;
+            margin-top: -13.5px;
+            margin-left: 20rem;
+        }
+
+        /*--------------------Home_page---------------------*/
+
+        .home_page {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(19 23 26);
+        }
+
+        .home_page .container .main .box1 {
+            height: 100%;
+            width: 100%;
+            padding: 33rem 4rem;
+        }
+
+
+
+        /*--------------------About_page---------------------*/
+
+        .about_page {
+            height: 100%;
+            width: 100vw;
+        }
+
+        .stats-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -5rem;
+            padding: 0 10rem;
+            padding-top: 5rem;
+            flex-wrap: wrap;
+        }
+
+        .skill-page {
+            height: 100%;
+            width: 98.9vw;
+            padding-top: 10rem;
+        }
+
+        .skill-page .main {
+            margin-top: 5rem;
+            padding: 0rem 2rem;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
     }
 
     /*--------------------resume_page---------------------*/
 
     .resume_page {
-        height: 220vh;
+        height: 100%;
         width: 100%;
     }
 
     .resume_page .my_info {
-        padding: 10rem 0rem;
+        /* padding: 10rem 0rem; */
         display: flex;
         gap: 5rem;
-        height: 210vh;
+        height: 195vh;
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume_page .my_info {
+        /* padding: 10rem 0rem; */
+        display: flex;
+        gap: 5rem;
+        height: 100%;
         width: 100%;
         justify-content: space-between;
         flex-direction: column;
@@ -3078,17 +3239,29 @@ footer .container .footer a {
     /*--------------------project_page---------------------*/
 
     .project_page {
-        height: 322vh;
-        width: 98.9vw;
+        height: 100%;
+        width: 100vw;
+        padding: 7rem 0;
     }
+
+
 
     /*--------------------contact_page---------------------*/
 
     .contact_page {
-        height: 70vh;
-        width: 98.9vw;
+        height: 100%;
+        width: 100vw;
     }
-}
+
+    footer {
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 
 /*------------------------------------------------
                 width : 375px
@@ -3173,14 +3346,14 @@ footer .container .footer a {
             align-items: center;
             flex-direction: column;
             position: fixed;
-            top: 19rem;
+            top: 15rem;
             left: -100%;
             gap: 8rem;
             padding: 20rem 0;
             transition: left 0.3s ease-in-out;
         }
 
-         
+
 
         header nav .nav-links li a {
             text-decoration: none;
@@ -3195,7 +3368,7 @@ footer .container .footer a {
             transition: all 0.3s ease;
         }
 
-        header nav .nav-links li a i{
+        header nav .nav-links li a i {
             font-size: 4.5rem;
         }
 
@@ -3252,10 +3425,6 @@ footer .container .footer a {
             text-shadow: 0 0 10px #00ff7f, 0 0 20px #00c6ff;
         }
 
-
-
-
-
         header .menu {
             display: block;
             color: #fff;
@@ -3264,22 +3433,13 @@ footer .container .footer a {
             margin-left: 20rem;
         }
 
-
-
-
-
+        /*--------------------Home_page---------------------*/
 
         .home_page {
             height: 100%;
             width: 100%;
             background-color: rgb(19 23 26);
         }
-
-
-
-
-
-
 
         .home_page .container .main .box1 {
             height: 100%;
