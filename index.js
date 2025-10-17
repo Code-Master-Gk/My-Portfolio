@@ -20,13 +20,15 @@ window.addEventListener("scroll", () => {
 let navLinks = document.getElementById("navLinks");
 let manuBtn = document.getElementById("menuBtn");
 let closeBtn = document.getElementById("closeBtn");
+let tabBtn = document.querySelectorAll(".tab");
 
+closeBtn.style.display = "none"
 
 manuBtn.addEventListener("click", function () {
     navLinks.style.left = "0";
     manuBtn.style.display = "none";
     closeBtn.style.display = "block";   
-})
+});
 
 closeBtn.addEventListener("click", function () {
     navLinks.style.left = "-100%";
@@ -34,6 +36,25 @@ closeBtn.addEventListener("click", function () {
     closeBtn.style.display = "none"
 });
 
+tabBtn.forEach(tab => {
+        tab.addEventListener("click", function () {
+            navLinks.style.left = "-100%";
+            manuBtn.style.display = "block";
+            closeBtn.style.display = "none";
+        });
+    })
+
+window.addEventListener("click", function (event) {
+    if (
+        !navLinks.contains(event.target) && 
+        event.target !== manuBtn && 
+        event.target !== closeBtn
+    ) {
+        navLinks.style.left = "-100%";
+        manuBtn.style.display = "block";
+        closeBtn.style.display = "none";
+    }
+});
 
 // ====================================
 //             type writer
