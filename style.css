@@ -698,7 +698,8 @@ header .menu {
     display: flex;
     gap: 5rem;
     height: 100%;
-    width: 100vw;;
+    width: 100vw;
+    ;
 }
 
 /*--------------------resume_page_name---------------------*/
@@ -1452,6 +1453,13 @@ footer .container .footer a {
 
     /*--------------------Home_page---------------------*/
 
+    .home_page .container .main {
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+    }
 
     .home_page .container .main .box1 {
         height: 100%;
@@ -1463,8 +1471,8 @@ footer .container .footer a {
     /*--------------------About_page---------------------*/
 
     .about_page {
-        height: 150vh;
-        width: 98.9vw;
+        height: 100%;
+        width: 100vw;
     }
 
     .about_page .main .contant {
@@ -1477,23 +1485,34 @@ footer .container .footer a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 5rem 10rem;
+        padding: 0rem 10rem;
         flex-wrap: wrap;
     }
 
     /*--------------------skill_page---------------------*/
 
     .skill-page {
-        height: 95vh;
-        width: 98.9vw;
+        height: 100%;
+        width: 100vw;
         padding: 5rem 0rem;
+    }
+
+    .skill-page .main {
+        margin-top: 5rem;
+        padding: 2rem 15rem;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        gap: 4rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     /*--------------------resume_page---------------------*/
 
     .resume_page {
-        height: 195vh;
-        width: 98.9vw;
+        height: 100%;
+        width: 100vw;
         padding-top: 5rem;
     }
 
@@ -1501,7 +1520,7 @@ footer .container .footer a {
         padding: 10rem 9rem;
         display: flex;
         gap: 5rem;
-        height: 185vh;
+        height: 100%;
         width: 100%;
         justify-content: space-between;
     }
@@ -1509,15 +1528,16 @@ footer .container .footer a {
     /*--------------------project_page---------------------*/
 
     .project_page {
-        height: 180vh;
-        width: 98.9vw;
+        height: 100%;
+        width: 100vw;
     }
 
     /*--------------------contact_page---------------------*/
 
     .contact_page {
-        height: 70vh;
-        width: 98.9vw;
+        height: 100%;
+        width: 100vw;
+        padding: 5rem 0rem;
     }
 
     /*--------------------arrow button---------------------*/
@@ -1529,9 +1549,10 @@ footer .container .footer a {
         z-index: 1000;
     }
 
-
-
-
+    footer {
+        height: 100%;
+        width: 100vw;
+    }
 }
 
 /*------------------------------------------------
@@ -1545,9 +1566,97 @@ footer .container .footer a {
 
     /*--------------------Home_page---------------------*/
 
+
+
+    .home_page .container .main .box1 {
+        height: 100%;
+        width: 40vw;
+        padding: 15rem 0rem;
+        padding-right: 6rem;
+    }
+
+    .home_page .container .main .box2 .main .image {
+        height: 30rem;
+        width: 48rem;
+        position: relative;
+        top: 12rem;
+        left: 7rem;
+        color: #fff;
+        box-shadow: 1px 1px 5px 1.5px #000;
+    }
+
+    /*--------------------About_page---------------------*/
     .about_page {
-        height: 140vh;
+        height: 100%;
         width: 98.9vw;
+    }
+
+    .about_page .main {
+        padding: 2rem 5rem;
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about_page .main .image img {
+        height: 75%;
+        width: 100%;
+    }
+
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-top: -3rem; */
+        padding: 5rem 10rem;
+        flex-wrap: wrap;
+    }
+
+    /*--------------------resume_page---------------------*/
+
+    .resume_page {
+        height: 100%;
+        width: 98.9vw;
+        padding-top: 5rem;
+    }
+
+    .resume_page .my_info {
+        padding: 10rem 9rem;
+        display: flex;
+        gap: 5rem;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /*--------------------project_page---------------------*/
+
+    .project_page {
+        height: 100%;
+        width: 98.9vw;
+    }
+
+    /*--------------------contact_page---------------------*/
+
+    .contact_page {
+        height: 100%;
+        width: 100vw;
+        padding: 5rem 0rem;
+    }
+
+
+}
+
+/*------------------------------------------------
+                width : 888px
+--------------------------------------------------*/
+
+
+@media (max-width : 888px) {
+    html {
+        font-size: 42%;
     }
 
     .home_page .container .main .box1 {
@@ -1568,9 +1677,22 @@ footer .container .footer a {
     }
 
     /*--------------------About_page---------------------*/
+    .about_page {
+        height: 100%;
+        width: 98.9vw;
+    }
+
+    .about_page .main {
+        padding: 2rem 5rem;
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 
     .about_page .main .image img {
-        height: 52rem;
+        height: 75%;
         width: 100%;
     }
 
@@ -1579,14 +1701,14 @@ footer .container .footer a {
         justify-content: space-between;
         align-items: center;
         /* margin-top: -3rem; */
-        padding: 0rem 10rem;
+        padding: 5rem 10rem;
         flex-wrap: wrap;
     }
 
     /*--------------------resume_page---------------------*/
 
     .resume_page {
-        height: 185vh;
+        height: 100%;
         width: 98.9vw;
         padding-top: 5rem;
     }
@@ -1595,7 +1717,7 @@ footer .container .footer a {
         padding: 10rem 9rem;
         display: flex;
         gap: 5rem;
-        height: 170vh;
+        height: 100%;
         width: 100%;
         justify-content: space-between;
     }
@@ -1603,98 +1725,21 @@ footer .container .footer a {
     /*--------------------project_page---------------------*/
 
     .project_page {
-        height: 170vh;
+        height: 100%;
         width: 98.9vw;
     }
 
     /*--------------------contact_page---------------------*/
 
     .contact_page {
-        height: 65vh;
-        width: 98.9vw;
+        height: 100%;
+        width: 100vw;
+        padding: 5rem 0rem;
     }
 
 
 }
 
-/*------------------------------------------------
-                width : 888px
---------------------------------------------------*/
-
-
-@media (max-width : 888px) {
-    html {
-        font-size: 42%;
-    }
-
-    /*--------------------About_page---------------------*/
-
-    .about_page {
-        height: 130vh;
-        width: 98.9vw;
-    }
-
-    .stats-section {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: -3rem;
-        padding: 0rem 10rem;
-        flex-wrap: wrap;
-    }
-
-    /*--------------------resume_page---------------------*/
-
-    .resume_page {
-        height: 175vh;
-        width: 98.9vw;
-        padding-top: 5rem;
-    }
-
-    .resume_page .my_info {
-        padding: 10rem 9rem;
-        display: flex;
-        gap: 5rem;
-        height: 160vh;
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    /*--------------------project_page---------------------*/
-
-    .project_page {
-        height: 160vh;
-        width: 98.9vw;
-    }
-
-    /*--------------------contact_page---------------------*/
-
-    .contact_page {
-        height: 60vh;
-        width: 98.9vw;
-    }
-
-    /*--------------------arrow button---------------------*/
-
-    .buttons {
-        position: fixed;
-        top: 85%;
-        right: 4rem;
-        z-index: 1000;
-    }
-
-    .buttons button {
-        height: 5.5rem;
-        width: 5.5rem;
-        background: #0066cc;
-        border: none;
-        border-radius: 50%;
-        font-size: 2rem;
-        color: #fff;
-        cursor: pointer;
-    }
-
-}
 
 /*------------------------------------------------
                 width : 830px
@@ -1706,72 +1751,87 @@ footer .container .footer a {
         font-size: 40%;
     }
 
-    /*--------------------About_page---------------------*/
+    .home_page .container .main .box1 {
+        height: 100%;
+        width: 40vw;
+        padding: 15rem 0rem;
+        padding-right: 6rem;
+    }
 
+    .home_page .container .main .box2 .main .image {
+        height: 30rem;
+        width: 48rem;
+        position: relative;
+        top: 12rem;
+        left: 7rem;
+        color: #fff;
+        box-shadow: 1px 1px 5px 1.5px #000;
+    }
+
+    /*--------------------About_page---------------------*/
     .about_page {
-        height: 120vh;
+        height: 100%;
         width: 98.9vw;
+    }
+
+    .about_page .main {
+        padding: 2rem 5rem;
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about_page .main .image img {
+        height: 75%;
+        width: 100%;
     }
 
     .stats-section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: -5rem;
-        padding: 0rem 10rem;
+        /* margin-top: -3rem; */
+        padding: 5rem 10rem;
         flex-wrap: wrap;
     }
 
     /*--------------------resume_page---------------------*/
 
     .resume_page {
-        height: 160vh;
+        height: 100%;
         width: 98.9vw;
         padding-top: 5rem;
     }
 
-    /*--------------------Skill_page---------------------*/
-
-    .skill-page {
-        height: 90vh;
-        width: 98.9vw;
-        padding: 5rem 0rem;
+    .resume_page .my_info {
+        padding: 10rem 9rem;
+        display: flex;
+        gap: 5rem;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
     }
 
     /*--------------------project_page---------------------*/
 
     .project_page {
-        height: 155vh;
+        height: 100%;
         width: 98.9vw;
     }
 
     /*--------------------contact_page---------------------*/
 
     .contact_page {
-        height: 57vh;
-        width: 98.9vw;
+        height: 100%;
+        width: 100vw;
+        padding: 5rem 0rem;
     }
 
-    /*--------------------arrow button---------------------*/
 
-    .buttons {
-        position: fixed;
-        top: 85%;
-        right: 4rem;
-        z-index: 1000;
-    }
-
-    .buttons button {
-        height: 6.5rem;
-        width: 6.5rem;
-        background: #0066cc;
-        border: none;
-        border-radius: 50%;
-        font-size: 3rem;
-        color: #fff;
-        cursor: pointer;
-    }
 }
+
 
 /*------------------------------------------------
                 width : 800px
@@ -1782,38 +1842,82 @@ footer .container .footer a {
         font-size: 38%;
     }
 
+    .home_page .container .main .box1 {
+        height: 100%;
+        width: 40vw;
+        padding: 15rem 0rem;
+        padding-right: 6rem;
+    }
+
+    .home_page .container .main .box2 .main .image {
+        height: 30rem;
+        width: 48rem;
+        position: relative;
+        top: 12rem;
+        left: 7rem;
+        color: #fff;
+        box-shadow: 1px 1px 5px 1.5px #000;
+    }
+
     /*--------------------About_page---------------------*/
+    .about_page {
+        height: 100%;
+        width: 98.9vw;
+    }
+
+    .about_page .main {
+        padding: 2rem 5rem;
+        margin-top: 2rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about_page .main .image img {
+        height: 75%;
+        width: 100%;
+    }
 
     .stats-section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: -10rem;
-        padding: 0rem 10rem;
+        /* margin-top: -3rem; */
+        padding: 5rem 10rem;
         flex-wrap: wrap;
     }
 
     /*--------------------resume_page---------------------*/
 
     .resume_page {
-        height: 155vh;
+        height: 100%;
         width: 98.9vw;
         padding-top: 5rem;
     }
 
+    .resume_page .my_info {
+        padding: 10rem 9rem;
+        display: flex;
+        gap: 5rem;
+        height: 100%;
+        width: 100%;
+        justify-content: space-between;
+    }
 
     /*--------------------project_page---------------------*/
 
     .project_page {
-        height: 145vh;
+        height: 100%;
         width: 98.9vw;
     }
 
     /*--------------------contact_page---------------------*/
 
     .contact_page {
-        height: 55vh;
-        width: 98.9vw;
+        height: 100%;
+        width: 100vw;
+        padding: 5rem 0rem;
     }
 
 
@@ -1906,7 +2010,7 @@ footer .container .footer a {
     /*--------------------About_page---------------------*/
 
     .about_page {
-        height: 200vh;
+        height: 100%;
         width: 98.9vw;
     }
 
@@ -1914,7 +2018,7 @@ footer .container .footer a {
         padding: 2rem 5rem;
         margin-top: 2rem;
         width: 100%;
-        height: 80vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1925,17 +2029,16 @@ footer .container .footer a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: -5rem;
-        padding: 58rem 10rem;
+        padding: 2rem 10rem;
         flex-wrap: wrap;
     }
 
     /*--------------------Skill_page---------------------*/
 
     .skill-page {
-        height: 120vh;
+        height: 100%;
         width: 98.9vw;
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
     }
 
     .skill-page .heading {
@@ -1952,7 +2055,7 @@ footer .container .footer a {
     .skill-page .main {
         margin-top: 5rem;
         padding: 2rem 0rem;
-        height: 85vh;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -1972,7 +2075,7 @@ footer .container .footer a {
     /*--------------------resume_page---------------------*/
 
     .resume_page {
-        height: 335vh;
+        height: 100%;
         width: 100%;
     }
 
@@ -1980,7 +2083,7 @@ footer .container .footer a {
         padding: 10rem 0rem;
         display: flex;
         gap: 5rem;
-        height: 320vh;
+        height: 100%;
         width: 100%;
         justify-content: space-between;
         flex-direction: column;
@@ -2001,7 +2104,7 @@ footer .container .footer a {
     /*--------------------project_page---------------------*/
 
     .project_page {
-        height: 245vh;
+        height: 100%;
         width: 98.9vw;
     }
 
@@ -2038,132 +2141,6 @@ footer .container .footer a {
 
 }
 
-/*------------------------------------------------
-                width : 750px
---------------------------------------------------*/
-@media (max-width : 750px) {
-    html {
-        font-size: 43%;
-    }
-
-    /*--------------------About_page---------------------*/
-
-    .about_page .main .contant {
-        height: 100%;
-        width: 76rem;
-        padding: 3.5rem 5rem;
-    }
-
-    /*--------------------skill_page---------------------*/
-
-    .skill-page {
-        height: 120vh;
-        width: 98.9vw;
-        margin-top: 0rem;
-    }
-
-    /*--------------------resume_page---------------------*/
-
-    .resume_page {
-        height: 305vh;
-        width: 100%;
-    }
-
-    .resume_page .my_info {
-        padding: 10rem 0rem;
-        display: flex;
-        gap: 5rem;
-        height: 300vh;
-        width: 100%;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .resume_page .projects .Other_project .line {
-        height: 21rem;
-        width: 0.2rem;
-        background-color: #0563bb;
-    }
-
-    /*--------------------project_page---------------------*/
-
-    .project_page {
-        height: 225vh;
-        width: 98.9vw;
-    }
-
-    /*--------------------contact_page---------------------*/
-
-    .contact_page {
-        height: 62vh;
-        width: 98.9vw;
-    }
-
-
-}
-
-/*------------------------------------------------
-                width : 654px
---------------------------------------------------*/
-
-@media (max-width : 654px) {
-    html {
-        font-size: 40%;
-    }
-
-    /*--------------------Skill_page---------------------*/
-    .skill-page {
-        height: 100vh;
-        width: 98.9vw;
-    }
-
-    .skill-page .main {
-        margin-top: 0rem;
-        padding: 2rem 0rem;
-        height: 85vh;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-    }
-
-    /*--------------------resume_page---------------------*/
-
-    .resume_page {
-        height: 285vh;
-        width: 100%;
-    }
-
-    .resume_page .my_info {
-        padding: 10rem 0rem;
-        display: flex;
-        gap: 5rem;
-        height: 280vh;
-        width: 100%;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /*--------------------project_page---------------------*/
-
-    .project_page {
-        height: 210vh;
-        width: 98.9vw;
-    }
-
-    /*--------------------contact_page---------------------*/
-
-    .contact_page {
-        height: 57vh;
-        width: 98.9vw;
-    }
-
-}
 
 /*------------------------------------------------
                 width : 650px
@@ -2175,45 +2152,100 @@ footer .container .footer a {
     }
 
     /*--------------------header---------------------*/
+    header {
+        width: 127vw;
+        height: 12vh;
+    }
 
-    header nav ul {
-        height: 80vh;
-        width: 98.9vw;
-        background-color: rgb(19, 23, 26);
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 3rem;
-        position: relative;
-        top: -50rem;
-        left: -12.2rem;
-        padding: 5rem 0;
-        transition: top 0.3s ease-in-out;
+    header img {
+        height: 10rem;
+        width: 14rem;
+        z-index: 200;
     }
 
     header nav .nav-links {
-        gap: 3rem;
-    }
-
-    .slider {
-        top: 36rem;
+        height: 100%;
+        width: 40vw;
+        background-color: rgb(19 23 26);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 5rem;
+        left: -100%;
+        gap: 8rem;
+        padding: 16rem 0;
+        transition: left 0.5s ease-in-out;
     }
 
     header nav .nav-links li a {
-        display: flex;
-        gap: 2rem;
-        font-size: 2.5rem;
-        color: #fff;
         text-decoration: none;
+        color: #ddd;
+        font-size: 3rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 0.8rem 1.6rem;
+        border-radius: 0.8rem;
+        transition: all 0.3s ease;
     }
 
     header nav .nav-links li a i {
-        font-size: 3rem;
+        font-size: 4.5rem;
     }
 
+    /* Hover Glow */
+    .nav-links li a:hover {
+        color: #fff;
+        background: rgba(0, 255, 127, 0.1);
+        box-shadow: 0 0 20px rgba(0, 255, 127, 0.6),
+            0 0 40px rgba(0, 198, 255, 0.4);
+    }
 
-    header .menu #closeBtn {
-        display: none;
+    /* Gradient underline (default hidden) */
+    .nav-links li a::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 3px;
+        background: linear-gradient(90deg, #ff0057, #00c6ff, #00ff7f, #ff0057);
+        background-size: 300% 100%;
+        /* important for moving effect */
+        border-radius: 2px;
+        transition: width 0.4s ease;
+    }
+
+    /* Jab hover kare tab underline dikhe + move kare */
+    .nav-links li a:hover::after {
+        width: 100%;
+        animation: gradient-move 3s linear infinite;
+    }
+
+    /* Gradient wave animation */
+    @keyframes gradient-move {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+
+    /* Icon neon effect */
+    .nav-links li a i {
+        font-size: 5rem;
+        transition: transform 0.4s, color 0.3s, text-shadow 0.3s;
+    }
+
+    .nav-links li a:hover i {
+        transform: rotate(20deg) scale(1.2);
+        color: #00ff7f;
+        text-shadow: 0 0 10px #00ff7f, 0 0 20px #00c6ff;
     }
 
 
@@ -2221,7 +2253,7 @@ footer .container .footer a {
     header .menu {
         display: block;
         color: #fff;
-        font-size: 4rem;
+        font-size: 5rem;
         position: relative;
         right: 21rem;
         z-index: 100;
@@ -2260,9 +2292,10 @@ footer .container .footer a {
     }
 
     .home_page .container .main .box1 .contant .pra {
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: #fff;
         padding-top: 2rem;
+        line-height: 3rem;
     }
 
     .home_page .container .main .box1 .contant .icon {
@@ -2296,10 +2329,18 @@ footer .container .footer a {
         display: none;
     }
 
+    /*--------------------about_page---------------------*/
+
+    .about_page .main .contant {
+        height: 100%;
+        width: 100%;
+        padding-top: 3.5rem;
+    }
+
     /*--------------------skill_page---------------------*/
 
     .skill-page {
-        height: 110vh;
+        height: 100%;
         width: 98.9vw;
         padding-top: 10rem;
     }
@@ -2314,7 +2355,7 @@ footer .container .footer a {
     /*--------------------resume_page---------------------*/
 
     .resume_page {
-        height: 320vh;
+        height: 100%;
         width: 100%;
     }
 
@@ -2322,7 +2363,7 @@ footer .container .footer a {
         padding: 10rem 0rem;
         display: flex;
         gap: 5rem;
-        height: 308vh;
+        height: 100%;
         width: 100%;
         justify-content: space-between;
         flex-direction: column;
@@ -2338,7 +2379,7 @@ footer .container .footer a {
     /*--------------------project_page---------------------*/
 
     .project_page {
-        height: 220vh;
+        height: 100%;
         width: 98.9vw;
     }
 
@@ -2362,448 +2403,21 @@ footer .container .footer a {
     /*--------------------contact_page---------------------*/
 
     .contact_page {
-        height: 100vh;
+        height: 100%;
         width: 98.9vw;
     }
-
-    /*------------------------------------------------
-                width : 589px
-    --------------------------------------------------*/
-
-    @media (max-width : 589px) {
-        html {
-            font-size: 40%;
-        }
-
-        /*--------------------header---------------------*/
-
-        header nav ul {
-            height: 80vh;
-            width: 98.9vw;
-            background-color: rgb(19, 23, 26);
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            gap: 3rem;
-            position: relative;
-            top: -50rem;
-            left: -12.2rem;
-            padding: 5rem 0;
-            transition: top 0.3s ease-in-out;
-        }
-
-        header nav .nav-links {
-            gap: 3rem;
-        }
-
-        .slider {
-            top: 40rem;
-        }
-
-        /*--------------------resume_page---------------------*/
-
-        .resume_page {
-            height: 305vh;
-            width: 100%;
-        }
-
-        /*--------------------project_page---------------------*/
-
-        .project_page {
-            height: 200vh;
-            width: 98.9vw;
-        }
-
-        /*--------------------contact_page---------------------*/
-
-        .contact_page {
-            height: 95vh;
-            width: 98.9vw;
-        }
-
-
-        .contact-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 7rem;
-            padding: 7rem;
-            max-width: 120rem;
-            margin: auto;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        /*--------------------arrow button---------------------*/
-
-        .buttons {
-            position: fixed;
-            top: 85%;
-            right: 4rem;
-            z-index: 1000;
-        }
-
-        .buttons button {
-            height: 6rem;
-            width: 6rem;
-            background: #0066cc;
-            border: none;
-            border-radius: 50%;
-            font-size: 3rem;
-            color: #fff;
-            cursor: pointer;
-        }
-    }
-
-
-
-    /*------------------------------------------------
-                width : 530px
-    --------------------------------------------------*/
-    @media (max-width : 530px) {
-        html {
-            font-size: 40%;
-        }
-
-        /*--------------------about_page---------------------*/
-
-
-        .about_page {
-            height: 185vh;
-            width: 98.9vw;
-        }
-
-        .stats-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 0rem;
-            padding: 40rem 10rem;
-            flex-wrap: wrap;
-        }
-
-        /*--------------------skill_page---------------------*/
-
-        .skill-page {
-            height: 90vh;
-            width: 98.9vw;
-            padding-top: 0rem;
-        }
-
-        .skill-page .heading {
-            text-align: center;
-            display: flex;
-            gap: 2rem;
-            flex-direction: column;
-            align-items: center;
-            font-size: 2.5rem;
-            padding: 0 10rem;
-        }
-
-
-
-        /*--------------------project_page---------------------*/
-
-        .project_page {
-            height: 415vh;
-            width: 98.9vw;
-        }
-
-        .project_page .container .filterable_card {
-            width: 100%;
-            flex-grow: 2;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(31rem, 1fr));
-            gap: 5rem;
-            justify-items: center;
-            align-items: center;
-            padding: 0 8rem;
-        }
-
-        .project_page .container .filterable_card .card {
-            height: 25rem;
-            width: 50rem;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .project_page .slider {
-            margin-top: -55%;
-        }
-
-        .project_page .container .filterable_card .card .card_body h1 {
-            font-size: 3rem;
-
-        }
-
-        .project_page .container .filterable_card .card .card_body p {
-            margin-top: 1.2rem;
-            font-size: 2rem;
-            color: #787b7e;
-        }
-
-        .project_page .container .filterable_card .card .card_body .icon {
-            display: flex;
-            gap: 0.5rem;
-            margin-top: 5rem;
-            margin-right: 1rem;
-        }
-
-        .project_page .container .filterable_card .card .card_body .icon i {
-            font-size: 4rem;
-            font-weight: 200;
-            color: #787b7e;
-        }
-
-
-
-
-
-    }
-
-    /*------------------------------------------------
-                width : 512px
---------------------------------------------------*/
-    @media (max-width : 512px) {
-        html {
-            font-size: 37.5%;
-        }
-
-        /*--------------------header---------------------*/
-
-        header nav ul {
-            height: 80vh;
-            width: 98.9vw;
-            background-color: rgb(19, 23, 26);
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            gap: 3rem;
-            position: relative;
-            top: -50rem;
-            left: -12.3rem;
-            padding: 5rem 0;
-            transition: top 0.3s ease-in-out;
-        }
-
-        header nav .nav-links {
-            gap: 3rem;
-        }
-
-        .slider {
-            top: 42rem;
-        }
-
-        /*--------------------home_page---------------------*/
-
-        .home_page .container .main .box1 {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 15rem 3rem;
-        }
-
-        /*--------------------about_page---------------------*/
-
-
-        .about_page {
-            height: 185vh;
-            width: 98.9vw;
-        }
-
-        .stats-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 0rem;
-            padding: 40rem 10rem;
-            flex-wrap: wrap;
-        }
-
-
-        /*--------------------skill_page---------------------*/
-
-        .skill-page {
-            height: 85vh;
-            width: 98.9vw;
-            padding-top: 0rem;
-        }
-
-        .skill-page .main {
-            margin-top: 0rem;
-            padding: 0rem 2rem;
-            height: 75vh;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        /*--------------------resume_page---------------------*/
-
-        .resume_page {
-            height: 270vh;
-            width: 100%;
-        }
-
-
-        .resume_page .my_info {
-            padding: 10rem 0rem;
-            display: flex;
-            gap: 5rem;
-            height: 260vh;
-            width: 100%;
-            justify-content: space-between;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /*--------------------project_page---------------------*/
-
-
-        .project_page {
-            height: 390vh;
-            width: 98.9vw;
-        }
-
-        .project_page .container .filterable_card {
-            width: 100%;
-            flex-grow: 2;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
-            gap: 5rem;
-            justify-items: center;
-            align-items: center;
-            padding: 0 8rem;
-        }
-
-        .project_page .slider {
-            margin-top: -55%;
-        }
-
-        /*--------------------contact_page---------------------*/
-
-        .contact_page {
-            height: 85vh;
-            width: 98.9vw;
-        }
-
-        .contact-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 4rem;
-            padding: 6rem;
-            max-width: 120rem;
-            margin: auto;
-            justify-content: center;
-            align-items: flex-start;
-        }
-
-        /*--------------------arrow button---------------------*/
-
-        .buttons {
-            position: fixed;
-            top: 85%;
-            right: 4rem;
-            z-index: 1000;
-        }
-
-        .buttons button {
-            height: 6.5rem;
-            width: 6.5rem;
-            background: #0066cc;
-            border: none;
-            border-radius: 50%;
-            font-size: 3rem;
-            color: #fff;
-            cursor: pointer;
-        }
-    }
-
 
 }
 
 /*------------------------------------------------
-                width : 460px
+                width : 502px
 --------------------------------------------------*/
 
-@media (max-width : 460px) {
+@media (max-width : 502px) {
     html {
-        font-size: 35%;
-    }
-
-    /*--------------------resume_page---------------------*/
-
-    .resume_page {
-        height: 255vh;
-        width: 100%;
-    }
-
-
-    .resume_page .my_info {
-        padding: 10rem 0rem;
-        display: flex;
-        gap: 5rem;
-        height: 245vh;
-        width: 100%;
-        justify-content: space-between;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /*--------------------project_page---------------------*/
-
-    .project_page {
-        height: 367vh;
-        width: 98.9vw;
-    }
-
-    /*--------------------contact_page---------------------*/
-
-    .contact_page {
-        height: 85vh;
-        width: 98.9vw;
-    }
-
-    /*--------------------footer---------------------*/
-
-    footer {
-        height: 35vh;
-        width: 98.9vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        font-size: 38%;
     }
 }
-
-/*------------------------------------------------
-                width : 444px
---------------------------------------------------*/
-
-@media (max-width : 444px) {
-    html {
-        font-size: 35%;
-    }
-
-    /*--------------------project_page---------------------*/
-
-    .project_page {
-        height: 372vh;
-        width: 98.9vw;
-    }
-}
-
-
-
-
-
 
 
 /* ************************************************
@@ -2812,7 +2426,7 @@ footer .container .footer a {
 
 /*------------------------------------------------
                 width : 425px
-    --------------------------------------------------*/
+--------------------------------------------------*/
 
 @media (max-width : 425px) {
     html {
@@ -2822,163 +2436,169 @@ footer .container .footer a {
     /*--------------------header---------------------*/
 
     header {
-            width: 127vw;
-            height: 12vh;
+        width: 127vw;
+        height: 12vh;
+    }
+
+    header img {
+        height: 10rem;
+        width: 14rem;
+        z-index: 200;
+    }
+
+    header nav .nav-links {
+        height: 100%;
+        width: 50vw;
+        background-color: rgb(19 23 26);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 5rem;
+        left: -100%;
+        gap: 8rem;
+        padding: 20rem 0;
+        transition: left 0.3s ease-in-out;
+    }
+
+
+
+    header nav .nav-links li a {
+        text-decoration: none;
+        color: #ddd;
+        font-size: 4.5rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 0.8rem 1.6rem;
+        border-radius: 0.8rem;
+        transition: all 0.3s ease;
+    }
+
+    header nav .nav-links li a i {
+        font-size: 4.5rem;
+    }
+
+    /* Hover Glow */
+    .nav-links li a:hover {
+        color: #fff;
+        background: rgba(0, 255, 127, 0.1);
+        box-shadow: 0 0 20px rgba(0, 255, 127, 0.6),
+            0 0 40px rgba(0, 198, 255, 0.4);
+    }
+
+    /* Gradient underline (default hidden) */
+    .nav-links li a::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 3px;
+        background: linear-gradient(90deg, #ff0057, #00c6ff, #00ff7f, #ff0057);
+        background-size: 300% 100%;
+        /* important for moving effect */
+        border-radius: 2px;
+        transition: width 0.4s ease;
+    }
+
+    /* Jab hover kare tab underline dikhe + move kare */
+    .nav-links li a:hover::after {
+        width: 100%;
+        animation: gradient-move 3s linear infinite;
+    }
+
+    /* Gradient wave animation */
+    @keyframes gradient-move {
+        0% {
+            background-position: 0% 50%;
         }
 
-        header img {
-            height: 10rem;
-            width: 14rem;
-            z-index: 200;
+        100% {
+            background-position: 100% 50%;
         }
+    }
 
-        header nav .nav-links {
-            height: 100%;
-            width: 50vw;
-            background-color: rgb(19 23 26);
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            position: fixed;
-            top: 5rem;
-            left: -100%;
-            gap: 8rem;
-            padding: 20rem 0;
-            transition: left 0.3s ease-in-out;
-        }
+    /* Icon neon effect */
+    .nav-links li a i {
+        font-size: 5rem;
+        transition: transform 0.4s, color 0.3s, text-shadow 0.3s;
+    }
 
+    .nav-links li a:hover i {
+        transform: rotate(20deg) scale(1.2);
+        color: #00ff7f;
+        text-shadow: 0 0 10px #00ff7f, 0 0 20px #00c6ff;
+    }
 
+    header .menu {
+        display: block;
+        color: #fff;
+        font-size: 6rem;
+        margin-top: -13.5px;
+        margin-left: 20rem;
+    }
 
-        header nav .nav-links li a {
-            text-decoration: none;
-            color: #ddd;
-            font-size: 4.5rem;
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            padding: 0.8rem 1.6rem;
-            border-radius: 0.8rem;
-            transition: all 0.3s ease;
-        }
+    /*--------------------Home_page---------------------*/
 
-        header nav .nav-links li a i {
-            font-size: 4.5rem;
-        }
+    .home_page {
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(19 23 26);
+    }
 
-        /* Hover Glow */
-        .nav-links li a:hover {
-            color: #fff;
-            background: rgba(0, 255, 127, 0.1);
-            box-shadow: 0 0 20px rgba(0, 255, 127, 0.6),
-                0 0 40px rgba(0, 198, 255, 0.4);
-        }
-
-        /* Gradient underline (default hidden) */
-        .nav-links li a::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0%;
-            height: 3px;
-            background: linear-gradient(90deg, #ff0057, #00c6ff, #00ff7f, #ff0057);
-            background-size: 300% 100%;
-            /* important for moving effect */
-            border-radius: 2px;
-            transition: width 0.4s ease;
-        }
-
-        /* Jab hover kare tab underline dikhe + move kare */
-        .nav-links li a:hover::after {
-            width: 100%;
-            animation: gradient-move 3s linear infinite;
-        }
-
-        /* Gradient wave animation */
-        @keyframes gradient-move {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            100% {
-                background-position: 100% 50%;
-            }
-        }
-
-        /* Icon neon effect */
-        .nav-links li a i {
-            font-size: 5rem;
-            transition: transform 0.4s, color 0.3s, text-shadow 0.3s;
-        }
-
-        .nav-links li a:hover i {
-            transform: rotate(20deg) scale(1.2);
-            color: #00ff7f;
-            text-shadow: 0 0 10px #00ff7f, 0 0 20px #00c6ff;
-        }
-
-        header .menu {
-            display: block;
-            color: #fff;
-            font-size: 6rem;
-            margin-top: -13.5px;
-            margin-left: 20rem;
-        }
-
-        /*--------------------Home_page---------------------*/
-
-        .home_page {
-            height: 100vh;
-            width: 100%;
-            background-color: rgb(19 23 26);
-        }
-
-        .home_page .container .main .box1 {
-            height: 100%;
-            width: 100%;
-            padding: 33rem 4rem;
-        }
+    .home_page .container .main .box1 {
+        height: 100%;
+        width: 100%;
+        padding: 10rem 4rem;
+    }
 
 
 
-        /*--------------------About_page---------------------*/
+    /*--------------------About_page---------------------*/
 
-        .about_page {
-            height: 100%;
-            width: 100vw;
-        }
+    .about_page {
+        height: 100%;
+        width: 100vw;
+    }
 
-        .stats-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: -5rem;
-            padding: 0 10rem;
-            padding-top: 5rem;
-            flex-wrap: wrap;
-        }
+        .about_page .main .contant {
+        height: 100%;
+        width: 100%;
+        padding-top: 3.5rem;
+    }
 
-        .skill-page {
-            height: 100%;
-            width: 98.9vw;
-            padding-top: 10rem;
-        }
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -5rem;
+        padding: 0 10rem;
+        padding-top: 5rem;
+        flex-wrap: wrap;
+    }
 
-        .skill-page .main {
-            margin-top: 5rem;
-            padding: 0rem 2rem;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-        }
-    
+    .skill-page {
+        height: 100%;
+        width: 98.9vw;
+        padding-top: 10rem;
+    }
+
+    .skill-page .main {
+        margin-top: 5rem;
+        padding: 0rem 2rem;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
 
     /*--------------------resume_page---------------------*/
 
@@ -3048,162 +2668,162 @@ footer .container .footer a {
     /*--------------------header---------------------*/
 
     header {
-            width: 127vw;
-            height: 12vh;
+        width: 127vw;
+        height: 12vh;
+    }
+
+    header img {
+        height: 10rem;
+        width: 14rem;
+        z-index: 200;
+    }
+
+    header nav .nav-links {
+        height: 100%;
+        width: 50vw;
+        background-color: rgb(19 23 26);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 5rem;
+        left: -100%;
+        gap: 8rem;
+        padding: 20rem 0;
+        transition: left 0.3s ease-in-out;
+    }
+
+
+
+    header nav .nav-links li a {
+        text-decoration: none;
+        color: #ddd;
+        font-size: 4.5rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 0.8rem 1.6rem;
+        border-radius: 0.8rem;
+        transition: all 0.3s ease;
+    }
+
+    header nav .nav-links li a i {
+        font-size: 4.5rem;
+    }
+
+    /* Hover Glow */
+    .nav-links li a:hover {
+        color: #fff;
+        background: rgba(0, 255, 127, 0.1);
+        box-shadow: 0 0 20px rgba(0, 255, 127, 0.6),
+            0 0 40px rgba(0, 198, 255, 0.4);
+    }
+
+    /* Gradient underline (default hidden) */
+    .nav-links li a::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0%;
+        height: 3px;
+        background: linear-gradient(90deg, #ff0057, #00c6ff, #00ff7f, #ff0057);
+        background-size: 300% 100%;
+        /* important for moving effect */
+        border-radius: 2px;
+        transition: width 0.4s ease;
+    }
+
+    /* Jab hover kare tab underline dikhe + move kare */
+    .nav-links li a:hover::after {
+        width: 100%;
+        animation: gradient-move 3s linear infinite;
+    }
+
+    /* Gradient wave animation */
+    @keyframes gradient-move {
+        0% {
+            background-position: 0% 50%;
         }
 
-        header img {
-            height: 10rem;
-            width: 14rem;
-            z-index: 200;
+        100% {
+            background-position: 100% 50%;
         }
+    }
 
-        header nav .nav-links {
-            height: 100%;
-            width: 50vw;
-            background-color: rgb(19 23 26);
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            position: fixed;
-            top: 5rem;
-            left: -100%;
-            gap: 8rem;
-            padding: 20rem 0;
-            transition: left 0.3s ease-in-out;
-        }
+    /* Icon neon effect */
+    .nav-links li a i {
+        font-size: 5rem;
+        transition: transform 0.4s, color 0.3s, text-shadow 0.3s;
+    }
 
+    .nav-links li a:hover i {
+        transform: rotate(20deg) scale(1.2);
+        color: #00ff7f;
+        text-shadow: 0 0 10px #00ff7f, 0 0 20px #00c6ff;
+    }
 
+    header .menu {
+        display: block;
+        color: #fff;
+        font-size: 6rem;
+        margin-top: -13.5px;
+        margin-left: 20rem;
+    }
 
-        header nav .nav-links li a {
-            text-decoration: none;
-            color: #ddd;
-            font-size: 4.5rem;
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            padding: 0.8rem 1.6rem;
-            border-radius: 0.8rem;
-            transition: all 0.3s ease;
-        }
+    /*--------------------Home_page---------------------*/
 
-        header nav .nav-links li a i {
-            font-size: 4.5rem;
-        }
+    .home_page {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(19 23 26);
+    }
 
-        /* Hover Glow */
-        .nav-links li a:hover {
-            color: #fff;
-            background: rgba(0, 255, 127, 0.1);
-            box-shadow: 0 0 20px rgba(0, 255, 127, 0.6),
-                0 0 40px rgba(0, 198, 255, 0.4);
-        }
-
-        /* Gradient underline (default hidden) */
-        .nav-links li a::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0%;
-            height: 3px;
-            background: linear-gradient(90deg, #ff0057, #00c6ff, #00ff7f, #ff0057);
-            background-size: 300% 100%;
-            /* important for moving effect */
-            border-radius: 2px;
-            transition: width 0.4s ease;
-        }
-
-        /* Jab hover kare tab underline dikhe + move kare */
-        .nav-links li a:hover::after {
-            width: 100%;
-            animation: gradient-move 3s linear infinite;
-        }
-
-        /* Gradient wave animation */
-        @keyframes gradient-move {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            100% {
-                background-position: 100% 50%;
-            }
-        }
-
-        /* Icon neon effect */
-        .nav-links li a i {
-            font-size: 5rem;
-            transition: transform 0.4s, color 0.3s, text-shadow 0.3s;
-        }
-
-        .nav-links li a:hover i {
-            transform: rotate(20deg) scale(1.2);
-            color: #00ff7f;
-            text-shadow: 0 0 10px #00ff7f, 0 0 20px #00c6ff;
-        }
-
-        header .menu {
-            display: block;
-            color: #fff;
-            font-size: 6rem;
-            margin-top: -13.5px;
-            margin-left: 20rem;
-        }
-
-        /*--------------------Home_page---------------------*/
-
-        .home_page {
-            height: 100%;
-            width: 100%;
-            background-color: rgb(19 23 26);
-        }
-
-        .home_page .container .main .box1 {
-            height: 100%;
-            width: 100%;
-            padding: 33rem 4rem;
-        }
+    .home_page .container .main .box1 {
+        height: 100%;
+        width: 100%;
+        padding: 33rem 4rem;
+    }
 
 
 
-        /*--------------------About_page---------------------*/
+    /*--------------------About_page---------------------*/
 
-        .about_page {
-            height: 100%;
-            width: 100vw;
-        }
+    .about_page {
+        height: 100%;
+        width: 100vw;
+    }
 
-        .stats-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: -5rem;
-            padding: 0 10rem;
-            padding-top: 5rem;
-            flex-wrap: wrap;
-        }
+    .stats-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -5rem;
+        padding: 0 10rem;
+        padding-top: 5rem;
+        flex-wrap: wrap;
+    }
 
-        .skill-page {
-            height: 100%;
-            width: 98.9vw;
-            padding-top: 10rem;
-        }
+    .skill-page {
+        height: 100%;
+        width: 98.9vw;
+        padding-top: 10rem;
+    }
 
-        .skill-page .main {
-            margin-top: 5rem;
-            padding: 0rem 2rem;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-        }
+    .skill-page .main {
+        margin-top: 5rem;
+        padding: 0rem 2rem;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
 
 
     /*--------------------resume_page---------------------*/
@@ -3262,6 +2882,7 @@ footer .container .footer a {
     }
 
 }
+
 /*------------------------------------------------
                 width : 375px
     --------------------------------------------------*/
